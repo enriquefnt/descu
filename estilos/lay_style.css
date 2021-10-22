@@ -1,0 +1,168 @@
+ * {margin: 0; padding: 0; }
+body {font-family: Arial, Helvetica, Sans-serif; }
+header {
+	display: block; 
+	background-color: #3cbc8d;
+	padding: 0.1em; 
+	border-bottom: 3px solid #757575;
+	}
+
+div {
+  display: inline-block;
+  margin: 2px;
+  border: all;
+  color: black;
+  background-color: lightgrey;
+  width: auto;
+  text-align: left;
+  font-family: sans-serif;
+  padding: 5px ;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+h1 {
+	font-size: 1.4em;
+	font-weight: 3px; 
+	padding: 0.3em; 
+	color: white; 
+ 	width: 250px; 
+	margin: 0.1em;}
+h3 {
+	font-size: 1.1em;
+	font-weight: 1px; 
+	padding: 0.3em; 
+	color: black; 
+ 	width: auto; 
+	margin: 0.1em;}	
+
+nav {
+	background-color: #443A5C;
+	}
+
+nav a {
+	color: white; 
+	text-decoration: none;}
+nav a:hover {
+	color: #ddd;
+	}
+nav ul {
+	display: table; 
+	width: 500px; margin: auto;}
+nav li {
+	display: table-cell;
+	text-align: center;
+	padding: 0.5em;}
+
+main {overflow: auto; 
+		background-color: #f7f7f7; 
+		width: auto; 
+		margin: auto; 
+		box-shadow: -1000px 0 0 #f7f7f7, 1000px 0 0 #f7f7f7; 
+		padding-top: 15px;}
+
+footer {
+	padding: 1em; 
+	background-color: #FFC9A7 ; 
+	font-size: 0.9em;}
+
+p {margin-bottom: 1em;}
+
+body {font-size: 1.2em; font-family: arial, helvetica, sans-serif}
+input, label, select, textarea {float: left; width: 15em; margin-bottom: 1em;  padding: 0.5em;}
+label {clear: left; padding: 0; margin: 0;}
+input[type="submit"] {margin-left: 15em; width: auto; padding: 0.5em 1em; clear: both; font-size: 1em;}
+form {overflow: auto; clear: both; display: block;}
+
+blockquote {display: table; margin-bottom: 1em; border-bottom: 1px solid #ccc; padding: 0.5em; }
+blockquote p {display: table-cell; width: 90%; vertical-align: top;}
+blockquote form {  display: table-cell; width: 10%;}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+
+th {
+  position: sticky;
+  top: 0;
+  background-color: #3cbc8d;
+  color: white;
+  height: 50px;
+  text-align: center;
+}
+
+
+td {
+  height: 15px;
+}
+
+
+th, td {
+  padding: 1px;
+  
+}
+
+
+.tr {
+  background-color: gray;
+} 
+
+
+tr:nth-child(odd) {
+  background-color: gray;
+}
+
+
+tr:nth-child(even) {
+  background-color: #ccc;
+}
+
+
+.formulario {
+  margin: 2px;
+  border: all;
+  color: black;
+  background-color: lightgrey;
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  font-family: sans-serif;
+  padding:auto ;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.acWrap {
+  display: inline-block; /* Or block if you like */
+  position: relative;
+}
+
+/* (B) SUGGESTIONS */
+.acWrap .acSuggest {
+  position: absolute;
+  top: 80%; left: 0;
+  z-index: 9;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  display: none;
+  text-align: left;
+}
+.acWrap .acSuggest ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.acWrap .acSuggest ul li {
+  padding: 10px;
+}
+.acWrap .acSuggest ul li:hover {
+  background: #d9e7ff;
+  cursor: pointer;
+}

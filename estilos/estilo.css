@@ -1,0 +1,105 @@
+* {
+	padding: o;
+	margin: 0;
+}
+
+div {
+  display: inline-block;
+  margin: 10px;
+  border: all;
+  color: black;
+  background-color: lightgrey;
+  width: auto;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 10px ;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+
+p {
+	color: darkgreen;
+	font-family: sans-serif;
+	line-height: 30px;
+}
+
+form {
+text-align: left;	
+  font: 1em sans-serif;
+  max-width: 320px;
+  background-color: #ccc;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin: 3px;
+  padding: 3px;
+}
+
+li a {
+  display: block;
+  color: darkgreen;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+fieldset
+{   
+	color: darkgreen;
+    border:2px solid #ccc ;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
+
+.formulario {
+  margin: 10px;
+  border: all;
+  color: black;
+  background-color: lightgrey;
+  display: inline-flex;
+  width: auto;
+  text-align: center;
+  font-family: sans-serif;
+  padding:auto ;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.acWrap {
+  display: inline-block; /* Or block if you like */
+  position: relative;
+}
+
+/* (B) SUGGESTIONS */
+.acWrap .acSuggest {
+  position: absolute;
+  top: 100%; left: 0;
+  z-index: 9;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #eee;
+  display: none;
+  text-align: left;
+}
+.acWrap .acSuggest ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.acWrap .acSuggest ul li {
+  padding: 10px;
+}
+.acWrap .acSuggest ul li:hover {
+  background: #d9e7ff;
+  cursor: pointer;
+}
