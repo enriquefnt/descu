@@ -15,10 +15,26 @@ $record = [
 							 	'Talla' =>$_POST['Talla'],
 							    'Observaciones' =>$_POST['Observaciones']];
 insert($pdo, 'control', $record);
-//	header('Location: vercontrol.php')	;		 
-//header('Location: mensaje_secargo.html.php')	;	
 
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // collect value of input field
+  $idPersona = $_REQUEST['idPersona'];
+  if (empty($idPersona)) {
+    echo "Name is empty";
+  } else {
+    echo $idPersona;
+  }
+}
+
+
+
+
+
+
+
+
+header('Location: /../descu/includes/secargo.php')	;	 
 
 }
 $sql='call lista_simple;';
@@ -27,6 +43,8 @@ $casos = $pdo->query($sql);
 ob_start();
 include __DIR__ . '/../templates/cargaControl.html.php';
 $output = ob_get_clean() ;
+
+
 }
 
     catch (PDOException $e) {
@@ -34,6 +52,10 @@ $output = ob_get_clean() ;
       $e->getFile() . ':' . $e->getLine();
     }
 	
+
+
+
+
 
 //
 

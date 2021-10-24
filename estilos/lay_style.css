@@ -1,5 +1,8 @@
  * {margin: 0; padding: 0; }
-body {font-family: Arial, Helvetica, Sans-serif; }
+body {
+  font-family: Arial, Helvetica, Sans-serif; 
+}
+
 header {
 	display: block; 
 	background-color: #3cbc8d;
@@ -22,14 +25,14 @@ div {
 }
 
 h1 {
-	font-size: 1.4em;
+	font-size: 1.3em;
 	font-weight: 3px; 
 	padding: 0.3em; 
 	color: white; 
  	width: 250px; 
 	margin: 0.1em;}
 h3 {
-	font-size: 1.1em;
+	font-size: 1.0em;
 	font-weight: 1px; 
 	padding: 0.3em; 
 	color: black; 
@@ -62,38 +65,57 @@ main {overflow: auto;
 		padding-top: 15px;}
 
 footer {
+   display: flex;
+   justify-content: space-around;
 	padding: 1em; 
 	background-color: #FFC9A7 ; 
 	font-size: 0.9em;}
 
 p {margin-bottom: 1em;}
 
-body {font-size: 1.2em; font-family: arial, helvetica, sans-serif}
-input, label, select, textarea {float: left; width: 15em; margin-bottom: 1em;  padding: 0.5em;}
-label {clear: left; padding: 0; margin: 0;}
-input[type="submit"] {margin-left: 15em; width: auto; padding: 0.5em 1em; clear: both; font-size: 1em;}
-form {overflow: auto; clear: both; display: block;}
+body {
+  font-size: 1.2em; 
+  font-family: arial, helvetica, sans-serif
+}
+input, label, select, textarea {
+  float: left;
+   width: 15em;
+    margin-bottom: 1em;
+      padding: 0.5em;
+    }
+label {
+  clear: left; 
+  padding: 0; 
+  margin: 0;
+}
+input[type="submit"] {
+  
+  width: auto; 
+  padding: 0.5em 1em; 
+  clear: both; 
+  font-size: 1em;}
 
-blockquote {display: table; margin-bottom: 1em; border-bottom: 1px solid #ccc; padding: 0.5em; }
-blockquote p {display: table-cell; width: 90%; vertical-align: top;}
-blockquote form {  display: table-cell; width: 10%;}
+form {
+  overflow: auto;
+  clear: both;
+  display: block;}
+
 
 table {
-border-collapse: collapse;
-width: 100%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
 table, th, td {
   border: 1px solid #ddd;
 }
 
-
 th {
   position: sticky;
   top: 0;
   background-color: #3cbc8d;
   color: white;
-  height: 50px;
+  height: 40px;
   text-align: center;
 }
 
@@ -123,6 +145,14 @@ tr:nth-child(even) {
   background-color: #ccc;
 }
 
+fieldset
+{   
+  color: darkgreen;
+    border:2px solid #ccc ;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;  
+    border-radius:8px;  
+}
 
 .formulario {
   margin: 2px;

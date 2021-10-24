@@ -1,11 +1,11 @@
-<link rel="stylesheet" type="text/css" href="../estilos/estilo.css">
+<!-- <link rel="stylesheet" type="text/css" href="../estilos/estilo.css"> -->
   <script src="../js/autocompleta.js"></script>
   
 
-<div class="formulario">
+<div>
     <fieldset>
       <legend>Control</legend>
-<form action="" autocomplete="off" method="post">
+<form action="" autocomplete="off" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>>
 
 
  <label for="dName">Buscar caso:</label><br>
@@ -28,14 +28,14 @@
 
 </fieldset>
 </div>
-
+<!--
 <div>
     <table>
       <table>
     <thead>
       <tr>
-       <!-- <th>Nombre</th>
-        <th>Area Operativa Nombre</th> -->
+       <th>Nombre</th>
+        <th>Area Operativa Nombre</th> 
         <th>Edad (AMD)</th>
         <th>Fecha Control</th>
         <th>Peso</th>
@@ -46,15 +46,18 @@
       </tr>
     </thead>
     
-
+-->
+<!--
 <?php
 $caso = [];
  foreach ($casos as $caso) {
-  if (isset($_POST['idPersona'])  && $caso['idPersona']==$_POST['idPersona']) { ?>
+  if (isset($_POST['idPersona'])  && $caso['idPersona']==$_POST['idPersona']) {
+
+   ?>
 <tbody>
 <tr>
        <!-- <td><?= htmlspecialchars($caso['Nombre'] , ENT_QUOTES, 'UTF-8'); ?></td>
-        <td><?= htmlspecialchars($caso['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?></td>-->
+        <td><?= htmlspecialchars($caso['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?></td>
         <td><?= htmlspecialchars($caso['años'] .'A ' . $caso['meses'] .'M ' . $caso['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
         <td><?= htmlspecialchars($caso['FechaCtrl'], ENT_QUOTES, 'UTF-8'); ?></td>
         <td><?= htmlspecialchars($caso['Peso'], ENT_QUOTES, 'UTF-8'); ?></td>
@@ -70,12 +73,13 @@ $caso = [];
     }
 }
 ?>
-</table>
+</table> 
+-->
 
 
 </div>
 
-
+ -->
 
 <script>
     // (C) ATTACH AUTOCOMPLETE TO INPUT FIELDS

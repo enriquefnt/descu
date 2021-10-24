@@ -1,8 +1,8 @@
 
-  <div>
+ <div>
     <fieldset >
       <legend>Datos personales</legend>
-<form action="" method="post" class="formulario">
+<form action="" method="post" >
   
   <label for="Nombre">Nombre:</label><br>
   <input type="text" required="required" id="Nombre" name="Nombre" autocomplete="off" value=""><br><br>
@@ -31,6 +31,5 @@ $aop = [];
   <input type="submit" value="Cargar">
 </fieldset>
 </div>
-
 
 

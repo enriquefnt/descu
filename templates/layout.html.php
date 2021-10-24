@@ -25,8 +25,8 @@
 
 </main>
 
-<footer>
-<h3> DNyAS - Programa: Observatorio Vigilancia Nutricional</h3>
+<footer class="seccion-final">
+<h3 class="seccion-final__parrafo"> DNyAS - Programa: Observatorio Vigilancia Nutricional</h3>
 
 </footer>
 </body>
