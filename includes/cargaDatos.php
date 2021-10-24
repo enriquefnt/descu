@@ -20,8 +20,8 @@ $record = [
 							 	'Sexo' =>$_POST['Sexo'],
 							    'AOP' =>$_POST['AOP']];
 insert ($pdo, 'persona', $record);
-
-header('Location: /../descu/templates/mensaje_secargo.html.php')	;	 
+session_unset();
+header('Location: /../descu/includes/secargo.php')	;	 
 
 }
 else {
