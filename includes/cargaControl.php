@@ -40,6 +40,7 @@ header('Location: /../descu/includes/secargo.php')	;
 $sql='call lista_simple;';
 
 $casos = $pdo->query($sql);
+ $title = 'Carga Controles';
 ob_start();
 include __DIR__ . '/../templates/cargaControl.html.php';
 $output = ob_get_clean() ;

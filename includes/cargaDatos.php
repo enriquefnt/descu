@@ -34,7 +34,7 @@ else {
    
 
 $result = findAll($pdo, 'aopzonas');
-
+ $title = 'Carga Datos';
 
 ob_start();
 include __DIR__ . '/../templates/cargaDatos.html.php';

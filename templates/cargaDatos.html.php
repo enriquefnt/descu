@@ -5,9 +5,9 @@
 <form action="" method="post" >
   
   <label for="Nombre">Nombre:</label><br>
-  <input type="text" required="required" id="Nombre" name="Nombre" autocomplete="off" value=""><br><br>
+  <input type="text" required="required" id="Nombre" name="Nombre" placeholder="Nombre" autocomplete="off" value=""><br><br>
   <label for="Apellido">Apellido:</label><br>
-  <input type="text" required="required" id="Apellido" name="Apellido" autocomplete="off" value=""><br><br>
+  <input type="text" required="required" id="Apellido" name="Apellido" placeholder="Apellido" autocomplete="off" value=""><br><br>
   <label for="Sexo">Sexo:</label><br>
   <select name="Sexo" id="Sexo" value="-------">
     <option value='1'>Masculino</option>
@@ -16,7 +16,7 @@
     </select>
     <br><br>
   <label for="Nacimiento">Fecha de Nacimiento:</label><br>
-  <input type="date" id="Nacimiento" name="Nacimiento" value=""><br><br>
+  <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" value=""><br><br>
   <label for="AOP">Area Operativa:</label><br>
 
 <select name="AOP" required="required" id="AOP">

@@ -1,4 +1,21 @@
 
+	<form action="" method="post">
+  <label for="AOP">Seleccione el área operativa:</label>
+ 
+   <select name="AOP" required="required" id="AOP">
+<option value=0>Seleccione AOP</option>
+<?php
+$aop = [];
+  foreach ($result as $aop) {
+ echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
+  }
+?>
+</select>
+  
+  <input type="submit"  value="Seleccionar">
+
+</form>
+
 
 
 
@@ -18,9 +35,15 @@
 		</thead>
 
 
-<?php
-$caso = [];
-	foreach ($casos as $caso): ?>
+
+
+
+<?php 
+
+
+$aop= $_POST['AOP'];
+foreach ($casos as $caso): ?>
+   <?php if ($caso['idaop']==$aop){?>
 
 		<tbody>
 			<tr>
@@ -35,7 +58,9 @@ $caso = [];
 				<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
 
 			</tr>
-	<?php endforeach; ?>
+			<?php } ?>
+  <?php endforeach; ?>
+	
 		</tbody>
 	</table>
 
