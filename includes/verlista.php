@@ -12,7 +12,8 @@ $result = findAll($pdo, 'aopzonas');
 $sql='call lista_simple;';
 
 $casos = $pdo->query($sql);
-//$result = findAll($pdo, 'aopzonas');
+
+
  
   $title = 'Listado';
 

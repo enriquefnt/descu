@@ -40,10 +40,12 @@ $aop = [];
 
 <?php 
 
+if (isset($_POST['AOP'])) {
+	$aop= $_POST['AOP'];
+}
 
-$aop= $_POST['AOP'];
 foreach ($casos as $caso): ?>
-   <?php if ($caso['idaop']==$aop){?>
+   <?php if  ($caso['idaop']==$aop) {?>
 
 		<tbody>
 			<tr>
@@ -63,6 +65,8 @@ foreach ($casos as $caso): ?>
 	
 		</tbody>
 	</table>
+
+
 
 
 
