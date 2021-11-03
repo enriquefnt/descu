@@ -5,7 +5,7 @@
 <div>
     <fieldset>
       <legend>Control</legend>
-<form action="" autocomplete="off" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>>
+<form action="" autocomplete="off" method="post" action=""?>
 
 
  <label for="dName">Buscar caso:</label><br>
@@ -79,7 +79,7 @@ $caso = [];
 
 </div>
 
- -->
+
 
 <script>
     // (C) ATTACH AUTOCOMPLETE TO INPUT FIELDS

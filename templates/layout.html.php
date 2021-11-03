@@ -13,7 +13,7 @@
 <nav>
 <ul>
 <li><a href="../public/index.php">Inicio</a></li>
-<li><a href="../includes/cargaDatos.php">Carga Datos</a></li>
+<li><a href="../includes/buscacaso.php">Carga Datos</a></li>
 <li><a href="../includes/cargaControl.php">Carga Controles</a></li>
 <li><a href="../includes/verlista.php">Listados</a></li>
 
