@@ -29,8 +29,7 @@ else {
 
 }
 
-//$query = query($pdo,'SELECT COUNT(*) FROM persona WHERE Nombre="torres" ');
-//	$row = $query->fetch();
+
    
 
 $result = findAll($pdo, 'aopzonas');

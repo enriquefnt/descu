@@ -16,12 +16,14 @@ $aop = [];
 
 </form>
 
+<div class="w3-responsive">
+  <table class="w3-table-all w3-tiny">
+<?php 
 
+if (isset($_POST['AOP'])) { ?>
 
-
-	<table>
-		<thead>
-			<tr>
+			<thead>
+			<tr class="w3-grey">
 				<th>Nombre</th>
 				<th>Area Operativa Nombre</th>
 				<th>Edad (AMD)</th>
@@ -34,7 +36,7 @@ $aop = [];
 			</tr>
 		</thead>
 
-
+	<?php } ?>
 
 
 
@@ -48,7 +50,7 @@ foreach ($casos as $caso): ?>
    <?php if  ($caso['idaop']==$aop) {?>
 
 		<tbody>
-			<tr>
+			<tr class="w3-hover-pale-green">
 				<td align="left"><?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td align="left"><?= htmlspecialchars($caso['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td align="right"><?= htmlspecialchars($caso['años'] .'A ' . $caso['meses'] .'M ' . $caso['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
@@ -65,7 +67,7 @@ foreach ($casos as $caso): ?>
 	
 		</tbody>
 	</table>
-
+</div>
 
 
 

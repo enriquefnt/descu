@@ -1,7 +1,7 @@
 
 <!-- <link rel="stylesheet" type="text/css" href="../estilos/estilo.css"> -->
   <script src="../js/autocompleta.js"></script>
-  
+  <STYLE>A {text-decoration: none;} </STYLE>
 
 <div>
     <fieldset>
@@ -18,16 +18,21 @@
 <div>
 
 <?php
-// if (($_POST['idPersona'])=='xxxx') and (isset($_POST['idPersona'])) { 
 
-if ((isset($_POST['idPersona'])) && ($_POST['idPersona'])=='xxxx') { ?>  
- 
+if ((isset($_POST['Nombre'])) && ($_POST['idPersona'])=='xxxx') { ?>  
+<div class="w3-container w3-yellow">
+<button class="w3-btn w3-grey"> 
 <a href="../includes/cargaDatos.php">No existe, cargar los datos</a>
+</button>
+</div>
  <?php } 
 
 else { ?>
- 
+  <div class="w3-panel w3-green">
+ <button class="w3-btn w3-grey"> 
 <a href="../includes/cargaControl.php">Tiene registrados los datos, cargar control</a>
+</button>
+</div>
  <?php } ?>
 
  
