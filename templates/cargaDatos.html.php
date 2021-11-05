@@ -3,7 +3,7 @@
  <div>
     <fieldset >
       <legend>Datos personales</legend>
-<form action="" method="post" >
+<form class="w3-container w3-light-grey" action="" method="post" >
   
   <label for="Nombre">Nombre:</label><br>
   <input type="text" required="required" id="Nombre" name="Nombre" placeholder="Nombre" autocomplete="off" value=""><br><br>

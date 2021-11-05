@@ -5,7 +5,7 @@
 <div>
     <fieldset>
       <legend>Control</legend>
-<form action="" autocomplete="off" method="post" action=""?>
+<form class="w3-container w3-light-grey" autocomplete="off" method="post" action=""?>
 
 
  <label for="dName">Buscar caso:</label><br>

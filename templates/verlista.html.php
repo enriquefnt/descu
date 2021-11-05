@@ -25,7 +25,7 @@ if (isset($_POST['AOP'])) { ?>
 			<thead>
 			<tr class="w3-grey">
 				<th>Nombre</th>
-				<th>Area Operativa Nombre</th>
+			<!--	<th>Area Operativa Nombre</th> -->
 				<th>Edad (AMD)</th>
 				<th>Fecha Control</th>
 				<th>Peso</th>
@@ -52,7 +52,7 @@ foreach ($casos as $caso): ?>
 		<tbody>
 			<tr class="w3-hover-pale-green">
 				<td align="left"><?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td align="left"><?= htmlspecialchars($caso['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<!--	<td align="left"><?= htmlspecialchars($caso['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?></td> -->
 				<td align="right"><?= htmlspecialchars($caso['años'] .'A ' . $caso['meses'] .'M ' . $caso['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['FechaCtrl'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['Peso'], ENT_QUOTES, 'UTF-8'); ?></td>
@@ -60,10 +60,19 @@ foreach ($casos as $caso): ?>
 				<td><?= htmlspecialchars($caso['ZPE'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ZTE'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
+				<?php $areaOP =$caso['areaoperativa'] ; ?>
 
 			</tr>
 			<?php } ?>
   <?php endforeach; ?>
+
+<?php 
+
+if (isset($_POST['AOP'])) { ?>
+	<h4><?='Area Operativa: '. $areaOP .  ' al día ' . date("d-m-Y "); ?></h4>
+
+<?php } ?>
+
 	
 		</tbody>
 	</table>

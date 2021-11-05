@@ -4,11 +4,11 @@
   <STYLE>A {text-decoration: none;} </STYLE>
 
 <div>
-    <fieldset>
+    <fieldset style = "width:60%">
       <legend>Buscar Caso</legend>
-<form action="" autocomplete="off" method="post" action=""?>
+<form class="w3-container w3-light-grey" action="" autocomplete="off" method="post" ?>
  
-  <input type="text" name="Nombre" id="dName"><br><br>
+  <input  class="w3-input w3-border" style = "width:20%" type="text" name="Nombre" id="dName"><br><br>
  <input type="hidden"name="idPersona" id="dTel" value="xxxx"><br><br>
   <input type="submit" value="Ver">
 </form> 
@@ -20,7 +20,7 @@
 <?php
 
 if ((isset($_POST['Nombre'])) && ($_POST['idPersona'])=='xxxx') { ?>  
-<div class="w3-container w3-yellow">
+<div class="w3-panel w3-yellow">
 <button class="w3-btn w3-grey"> 
 <a href="../includes/cargaDatos.php">No existe, cargar los datos</a>
 </button>
