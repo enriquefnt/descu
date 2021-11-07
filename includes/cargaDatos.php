@@ -6,22 +6,22 @@ include __DIR__ . '/funciones.php';
 
  try {
 
-if ((isset($_POST['Nombre'])) && $row != 0) {
-	echo "Registro repetido, controle";
-}
+
 
 
 if (isset($_POST['Nombre'])) {
 
 $record = [
-	 							'Nombre' => $_POST['Nombre'],
-							 	'Apellido' => $_POST['Apellido'],
+	 							'Nombre' => ucwords(strtolower($_POST['Nombre'])),
+							 	'Apellido' => ucwords(strtolower($_POST['Apellido'])),
 							 	'Nacimiento' =>$_POST['Nacimiento'],
 							 	'Sexo' =>$_POST['Sexo'],
 							    'AOP' =>$_POST['AOP']];
 insert ($pdo, 'persona', $record);
 session_unset();
+
 header('Location: /../descu/includes/secargo.php')	;	 
+
 
 }
 else {

@@ -17,7 +17,7 @@ $record = [
 insert($pdo, 'control', $record);
 
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // collect value of input field
   $idPersona = $_REQUEST['idPersona'];
   if (empty($idPersona)) {
@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     echo $idPersona;
   }
-}
+} */
 
 
 

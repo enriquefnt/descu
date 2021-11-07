@@ -33,6 +33,8 @@ if (isset($_POST['AOP'])) { ?>
 				<th>Z Peso/Edad</th>
 				<th>Z Talla/Edad</th>
 				<th>Z IMC/Edad</th>
+				<th>Por Peso</th>
+				<th>Por Talla</th>
 			</tr>
 		</thead>
 
@@ -60,6 +62,8 @@ foreach ($casos as $caso): ?>
 				<td><?= htmlspecialchars($caso['ZPE'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ZTE'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
+				<td><?= htmlspecialchars($caso['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
+				<td><?= htmlspecialchars($caso['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<?php $areaOP =$caso['areaoperativa'] ; ?>
 
 			</tr>

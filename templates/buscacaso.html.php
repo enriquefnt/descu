@@ -20,19 +20,19 @@
 <?php
 
 if ((isset($_POST['Nombre'])) && ($_POST['idPersona'])=='xxxx') { ?>  
-<div class="w3-panel w3-yellow">
-<button class="w3-btn w3-grey"> 
+
+<button class="w3-btn w3-yellow"> 
 <a href="../includes/cargaDatos.php">No existe, cargar los datos</a>
 </button>
-</div>
+
  <?php } 
 
-else { ?>
-  <div class="w3-panel w3-green">
- <button class="w3-btn w3-grey"> 
+elseif (isset($_POST['Nombre'])) { ?> 
+ 
+ <button class="w3-btn w3-green"> 
 <a href="../includes/cargaControl.php">Tiene registrados los datos, cargar control</a>
 </button>
-</div>
+
  <?php } ?>
 
  

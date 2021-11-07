@@ -13,7 +13,7 @@
 
 <body class="w3-light-grey">
 <header class="w3-row-padding header w3-blue-grey">
-<h1>Registros de datos</h1>
+<h1>Registro de Controles Antropométricos</h1>
 <h3>Sectores descubiertos</h3>
 
 
