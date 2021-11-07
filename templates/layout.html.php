@@ -33,10 +33,12 @@
 
 
 
-<main class="w3-row-padding table-container"><span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>	
+<main class="w3-row-padding table-container">	
 	<div class="w3-container" >
+		<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>	
 			<?=$output?>
 	</div>
+
 </main>
 
 <footer class="w3-row-padding footer" >
