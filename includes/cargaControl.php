@@ -17,29 +17,13 @@ $record = [
 insert($pdo, 'control', $record);
 
 
-/*if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  // collect value of input field
-  $idPersona = $_REQUEST['idPersona'];
-  if (empty($idPersona)) {
-    echo "Name is empty";
-  } else {
-    echo $idPersona;
-  }
-} */
 
-
-
-
-
-
-
-
-header('Location: /../descu/includes/secargo.php')	;	 
+header('Location: /../descu/includes/secargoCtrl.php')	;	 
 
 }
-$sql='call lista_simple;';
+$sql='call Lista_conControl;';
 
-$casos = $pdo->query($sql);
+$casosCtrl = $pdo->query($sql);
  $title = 'Carga Controles';
 ob_start();
 include __DIR__ . '/../templates/cargaControl.html.php';

@@ -3,7 +3,28 @@
 
 
 
+<?php
 
+foreach ($casosCtrl as $casoCtrl) {
+ 
+    $nombresCtrl[]=$casoCtrl['Nombre'];
+    $areasCtrl[]=$casoCtrl['areaoperativa'];       
+    }   
+ 
+
+
+ ?>
+
+
+ <div class="w3-conteiner w3-responsive">
+    <fieldset>
+        <h3>Carga correcta</h3>
+<P><?=end($nombresCtrl).' del área operativa '. end($areasCtrl) . ' se cargo correctamente.';?> </P>
+</fieldset>
+</div>
+
+
+<!--
 <h3>Se cargo el registro correctamente</h3>
 
 <div>
@@ -24,8 +45,8 @@
     </thead>
     
 
-<?php
-$caso = [];
+<?php 
+/*$caso = [];
  foreach ($casos as $caso) {
   if (isset($_POST['idPersona'])  && $caso['idPersona']==$_POST['idPersona']) {
 
@@ -48,6 +69,7 @@ $caso = [];
  <?php
     }
 }
+*/
 ?>
 </table> 
 

@@ -35,7 +35,7 @@
 
 <main class="w3-row-padding table-container">	
 	<div class="w3-container" >
-		<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">X</span>	
+		<span onclick="this.parentElement.style.display='none'" class="w3-button w3-display-topright">&times;</span>	
 			<?=$output?>
 	</div>
 

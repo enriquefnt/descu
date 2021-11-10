@@ -2,10 +2,14 @@
 
 
 <?php
-/*foreach ($casos as $caso) {
- 	echo $caso['Nombre'];
- }
-*/
+
+foreach ($casos as $caso) {
+ 
+    $nombres[]=$caso['Nombre'];
+    $areas[]=$caso['areaoperativa'];       
+    }	
+ 
+
 
  ?>
 
@@ -13,7 +17,8 @@
 
 
 
-
-<h3>Se cargo el registro correctamente</h3>
-
-
+<div class="w3-conteiner w3-responsive">
+    <fieldset>
+<P><?=end($nombres).' del área operativa '. end($areas) . ' se cargo correctamente.';?> </P>
+</fieldset>
+</div>

@@ -3,7 +3,7 @@
  <div>
     <fieldset >
       <legend>Datos personales</legend>
-<form class="w3-container w3-light-grey" action="" method="post" >
+<form class="w3-group w3-light-grey" action="" method="post" >
   
   <label for="Nombre">Nombre:</label><br>
   <input type="text" required="required" id="Nombre" name="Nombre" placeholder="Nombre" autocomplete="off" value=""><br><br>
@@ -29,8 +29,24 @@ $aop = [];
   }
 ?>
 </select><br><br>
-  <input type="submit" value="Cargar">
+  <input type="submit"  class="w3-button w3-black" value="Cargar">
 </fieldset>
 </div>
 
+<!--
+<div class="w3-container">
+  <h2>W3.CSS Modal</h2>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
 
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Se cargo correctamente</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+-->
