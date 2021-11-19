@@ -1,5 +1,4 @@
-
-	<form action="" method="post">
+<form action="" method="post">
   <label for="AOP">Seleccione el área operativa:</label>
  
    <select name="AOP" required="required" id="AOP">
@@ -35,6 +34,8 @@ if (isset($_POST['AOP'])) { ?>
 				<th>Z IMC/Edad</th>
 				<th>Por Peso</th>
 				<th>Por Talla</th>
+				<th>Editar</th>
+				<th>Id</th>
 			</tr>
 		</thead>
 
@@ -46,7 +47,7 @@ if (isset($_POST['AOP'])) { ?>
 
 if (isset($_POST['AOP'])) {
 	$aop= $_POST['AOP'];
-}else{$aop='Sin Casos';}
+}
 
 foreach ($casos as $caso): ?>
    <?php if  ($caso['idaop']==$aop) {?>
@@ -64,6 +65,12 @@ foreach ($casos as $caso): ?>
 				<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
+			 	<td><a href="editaDatos.php?id=<?= htmlspecialchars($caso['idPersona'], ENT_QUOTES, 'UTF-8'); ?>">Editar</a></td>
+			 	<td><?= htmlspecialchars($caso['idPersona'], ENT_QUOTES, 'UTF-8'); ?></td>
+				
+
+			
+
 				<?php $areaOP =$caso['areaoperativa'] ; ?>
 
 			</tr>

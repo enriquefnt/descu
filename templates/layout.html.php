@@ -43,7 +43,7 @@
 
 <footer class="w3-row-padding footer" >
 	
-	<div class="w3-container w3-blue-grey">
+	<div class="w3-container w3-blue-grey  w3-center">
 <h3 > DNyAS - Programa: Observatorio Vigilancia Nutricional</h3>
 </div>
 </footer>

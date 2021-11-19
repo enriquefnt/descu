@@ -10,7 +10,7 @@
  
   <input  class="w3-input w3-border" style = "width:20%" type="text" name="Nombre" id="dName"><br><br>
  <input type="hidden"name="idPersona" id="dTel" value="xxxx"><br><br>
-  <input type="submit" value="Ver">
+  <input type="submit" value="Buscar">
 </form> 
 
 </fieldset>
