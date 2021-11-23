@@ -35,7 +35,7 @@ if (isset($_POST['AOP'])) { ?>
 				<th>Por Peso</th>
 				<th>Por Talla</th>
 				<th>Editar</th>
-				<th>Id</th>
+				<th>idPersona</th>
 			</tr>
 		</thead>
 

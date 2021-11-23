@@ -16,6 +16,6 @@ foreach ($casosCtrl as $casoCtrl) {
  ?>
 
 
-<p> El niño <?= htmlspecialchars($casoCtrl['Nombre'], ENT_QUOTES, 'UTF-8'); ?> del área operativa
+<p> El control de  <?= htmlspecialchars($casoCtrl['Nombre'], ENT_QUOTES, 'UTF-8'); ?> del área operativa
 <?= htmlspecialchars($casoCtrl['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?>
  se cargó correctamente</p>

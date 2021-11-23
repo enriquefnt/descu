@@ -3,7 +3,7 @@
       <legend>Datos personales</legend>
 <form class="w3-group w3-light-grey" action="" method="post" >
   
-  <input type="hidden" name="idPersona" value="<?=$datosCaso['idPersona'] ?? ''?>">  
+  <input type="hidden" name="id" value="<?=$datosCaso['idPersona'] ?? ''?>">  
 
   <label for="Nombre">Nombre:</label><br>
   <input type="text" required="required" id="Nombre" name="Nombre" placeholder="Nombre" autocomplete="off" value="<?=$datosCaso['Nombre'] ?? ''?>"><br><br>
@@ -32,7 +32,7 @@ $aop = [];
   }
 ?>
 </select><br><br>
-  <input type="submit"  class="w3-button w3-black" value="Cargar">
+  <input type="submit"  class="w3-button w3-black" value="Guardar Cambios">
 </fieldset>
 </div>
 
