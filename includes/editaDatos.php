@@ -9,13 +9,22 @@ include __DIR__ . '/funciones.php';
 
 if (isset($_POST['Nombre'])) {
 
-save($pdo, 'persona', 'idPersona', ['idPersona' => $_POST['id'],
+/* update($pdo, 'persona', 'idPersona', ['idPersona' => $_POST['id'],
 						  'Nombre' => ucwords(strtolower($_POST['Nombre'])),
 							 	'Apellido' => ucwords(strtolower($_POST['Apellido'])),
 							 	'Nacimiento' =>$_POST['Nacimiento'],
 							 	'Sexo' =>$_POST['Sexo'],
 							    'AOP' =>$_POST['AOP']]);
-/*
+
+
+
+update($pdo, 'joke', 'id', ['id' => $_POST['jokeid'],
+'joketext' => $_POST['joketext'],
+'authorId' => 1]);
+
+*/
+
+
 
 $record = [
 	 							'idPersona' => $_GET['id'],
@@ -24,14 +33,14 @@ $record = [
 							 	'Nacimiento' =>$_POST['Nacimiento'],
 							 	'Sexo' =>$_POST['Sexo'],
 							    'AOP' =>$_POST['AOP']];
-//update ($pdo, 'persona','idPersona', $record);
-//session_unset(); */
+update ($pdo, 'persona','idPersona', $record);
+//session_unset(); 
 
 
-save($pdo, 'persona','idPersona', $record);
+//save($pdo, 'persona','idPersona', $record);
 
 
-header('Location: /../descu/includes/verlista.php')	;	 
+header('Location: /../descu/includes/secargodat.php')	;	 
 
 
 }

@@ -65,7 +65,7 @@ foreach ($casos as $caso): ?>
 				<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
-			 	<td><a href="editaDatos.php?id=<?= htmlspecialchars($caso['idPersona'], ENT_QUOTES, 'UTF-8'); ?>">Editar</a></td>
+			 	<td><a href="editaDatos.php?id=<?=$caso['idPersona']; ?>">Editar</a></td>
 			 	<td><?= htmlspecialchars($caso['idPersona'], ENT_QUOTES, 'UTF-8'); ?></td>
 				
 
