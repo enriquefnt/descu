@@ -9,7 +9,7 @@ include __DIR__ . '/funciones.php';
 
 
 if (isset($_POST['idPersona'])) {
-
+$idPersona = $_GET['id'];
 $record = [
 	 							'Nombre' => ucwords(strtolower($_POST['Nombre'])),
 							 	'Apellido' => ucwords(strtolower($_POST['Apellido'])),
@@ -17,7 +17,9 @@ $record = [
 							 	'Sexo' =>$_POST['Sexo'],
 							    'AOP' =>$_POST['AOP']];
 update ($pdo, 'persona','idPersona', $record);
-session_unset();
+//session_unset();
+
+
 
 header('Location: /../descu/includes/secargoDat.php')	;	 
 
