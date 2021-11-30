@@ -3,6 +3,7 @@
 
 <?php
 
+
 foreach ($casos as $caso) {
  
     $nombres[]=$caso['Nombre'];
@@ -20,5 +21,6 @@ foreach ($casos as $caso) {
 <div class="w3-conteiner w3-responsive">
     <fieldset>
 <P><?=end($nombres).' del área operativa '. end($areas) . ' se cargo correctamente.';?> </P>
+
 </fieldset>
 </div>

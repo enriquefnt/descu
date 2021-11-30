@@ -12,11 +12,11 @@ include __DIR__ . '/funciones.php';
 if (isset($_POST['Nombre'])) {
 
 $record = [
-	 					'Nombre' => ucwords(strtolower($_POST['Nombre'])),
-					 	'Apellido' => ucwords(strtolower($_POST['Apellido']),
-					 	'Nacimiento' =>$_POST['Nacimiento'],
-					 	'Sexo' =>$_POST['Sexo'],
-					      'AOP' =>$_POST['AOP']];
+	 			'Nombre' => ucwords(strtolower($_POST['Nombre'])),
+				'Apellido' => ucwords(strtolower($_POST['Apellido'])),
+				'Nacimiento' =>$_POST['Nacimiento'],
+				'Sexo' =>$_POST['Sexo'],
+				'AOP' =>$_POST['AOP']];
 
 
 

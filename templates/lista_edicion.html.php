@@ -70,7 +70,6 @@ foreach ($casos as $caso): ?>
 				
 
 			
-
 				<?php $areaOP =$caso['areaoperativa'] ; ?>
 
 			</tr>

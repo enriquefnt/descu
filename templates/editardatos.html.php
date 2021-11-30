@@ -1,3 +1,5 @@
+<p> <?=   $datosCaso[0] .' ' . $datosCaso[1] .' ' .$datosCaso[2] .' ' . $datosCaso['AOP'] .' ' . $datosCaso[3] ?></p>
+
 <div>
     <fieldset >
       <legend>Datos personales</legend>
@@ -11,6 +13,7 @@
   <label for="Apellido">Apellido:</label><br>
   <input type="text" required="required" id="Apellido" name="Apellido" placeholder="Apellido" autocomplete="off" value="<?=$datosCaso['Apellido'] ?? ''?>"><br><br>
 
+
   <label for="Sexo">Sexo:</label><br>
   <select name="Sexo" id="Sexo" value="<?=$datosCaso['Sexo'] ?? ''?>">
     <option value='1'>Masculino</option>
@@ -22,7 +25,7 @@
   <label for="Nacimiento">Fecha de Nacimiento:</label><br>
   <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" value="<?=$datosCaso['Nacimiento'] ?? ''?>"><br><br>
 
-  <label for="AOP">Area Operativa:</label><br>
+ <label for="AOP">Area Operativa:</label><br>
   <select name="AOP" required="required" id="AOP">
   <option value=0>Seleccione AOP</option>
 <?php
@@ -31,9 +34,9 @@ $aop = [];
  echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
   }
 ?>
-</select><br><br>
-  <input type="submit"  class="w3-button w3-black" value="Guardar Cambios">
+</select><br><br> 
+  <input type="submit"  name="submit"  class="w3-button w3-black" value="Guardar Cambios">
+</form>
 </fieldset>
 </div>
-
 
