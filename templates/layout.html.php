@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="../estilos/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
  <!-- <link rel="stylesheet" type="text/css" href="../estilos/lay_style.css"> -->
+ <link rel="shortcut icon" href="../ico_descu.png">
 	<title><?=$title?></title>
 </head>
 

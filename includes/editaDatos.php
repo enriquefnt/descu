@@ -19,7 +19,7 @@ try {
 
 		$id = $_POST['id'];
   		$Nombre = ucwords(strtolower($_POST['Nombre'])); 
-  		$Apellido = $_POST['Apellido'];
+  		$Apellido = ucwords(strtolower($_POST['Apellido']));
   		$Nacimiento = $_POST['Nacimiento'];
   		$Sexo = $_POST['Sexo'];
 		$AOP = $_POST['AOP'];
