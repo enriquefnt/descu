@@ -6,8 +6,8 @@
 
 foreach ($casos as $caso) {
  
-    $nombres[]=$caso['Nombre'];
-    $areas[]=$caso['areaoperativa'];       
+    $nombres=$caso['Nombre'];
+    $areas=$caso['areaoperativa'];       
     }	
  
 
@@ -20,7 +20,9 @@ foreach ($casos as $caso) {
 
 <div class="w3-conteiner w3-responsive">
     <fieldset>
-<P><?=end($nombres).' del área operativa '. end($areas) . ' se cargo correctamente.';?> </P>
+<P><b><?=$nombres;?></b> del área operativa <b><?=$areas;?></b> se cargo correctamente </P>
 
 </fieldset>
+
+
 </div>

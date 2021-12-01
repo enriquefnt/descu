@@ -1,14 +1,14 @@
 
 <!-- <link rel="stylesheet" type="text/css" href="../estilos/estilo.css"> -->
   <script src="../js/autocompleta.js"></script>
-  <STYLE>A {text-decoration: none;} </STYLE>
+  
 
 <div>
-    <fieldset style = "width:60%">
+    <fieldset style = "width:30%">
       <legend>Buscar Caso</legend>
-<form class="w3-container w3-light-grey" action="" autocomplete="off" method="post" ?>
+<form class="w3-container w3-light-grey"  action="" autocomplete="off" method="post" ?>
  
-  <input  class="w3-input w3-border" style = "width:20%" type="text" name="Nombre" id="dName"><br><br>
+  <input  class="w3-input w3-border" style = "width:100%" type="text" name="Nombre" id="dName"><br><br>
  <input type="hidden"name="idPersona" id="dTel" value="xxxx"><br><br>
   <input type="submit" value="Buscar">
 </form> 

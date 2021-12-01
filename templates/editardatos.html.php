@@ -7,6 +7,8 @@
   
   <input type="hidden" name="id" value="<?=$datosCaso['idPersona'] ?? ''?>">  
 
+  
+
   <label for="Nombre">Nombre:</label><br>
   <input type="text" required="required" id="Nombre" name="Nombre" placeholder="Nombre" autocomplete="off" value="<?=$datosCaso['Nombre'] ?? ''?>"><br><br>
 

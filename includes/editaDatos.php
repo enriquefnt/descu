@@ -4,17 +4,35 @@ include __DIR__ . '/../includes/funciones.php';
 
 try {
 	if (isset($_POST['Nombre'])) {
+/*
+$record = [		'idPersona' => $_POST['idP'],
+	 			'Nombre' => ucwords(strtolower($_POST['Nombre'])),
+				'Apellido' => ucwords(strtolower($_POST['Apellido'])),
+				'Nacimiento' =>$_POST['Nacimiento'],
+				'Sexo' =>$_POST['Sexo'],
+				'AOP' =>$_POST['AOP']];
 
-/*		save($pdo, 'persona', 'idPersona', [`idPersona` => $_POST['id'],
+	
+
+
+	
+
+	update($pdo, 'persona', 'idPersona',$record);
+
+
+
+
+
+
+		save($pdo, 'persona', 'idPersona', [`id` => $_POST['idP'],
 						  `Nombre` => $_POST['Nombre'],
 						  `Apellido` => $_POST['Apellido'],
 						  `Nacimiento` => $_POST['Nacimiento'],
 						  `Sexo` => $_POST['Sexo'],
 						  `AOP` => $_POST['AOP']]);
 						
+	*/	
 		
-		header('location: verlista.php');  
-*/
 
 
 		$id = $_POST['id'];
@@ -34,14 +52,10 @@ try {
   	//	$pdo->close();
 
 
-  		
+
+  	
   		header("location: verlista.php");
   				
-
-
-
-
-
 
   									}
 		else {
