@@ -37,7 +37,6 @@ if (isset($_POST['AOP'])) { ?>
 				<th>Por Peso</th>
 				<th>Por Talla</th>
 				<th>Editar</th>
-				<th>idPersona</th>
 			</tr>
 		</thead>
 
@@ -68,7 +67,7 @@ foreach ($casos as $caso): ?>
 				<td><?= htmlspecialchars($caso['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($caso['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
 			 	<td><a href="editaDatos.php?id=<?=$caso['idPersona']; ?>">Editar</a></td>
-			 	<td><?= htmlspecialchars($caso['idPersona'], ENT_QUOTES, 'UTF-8'); ?></td>
+			 	
 				
 
 			

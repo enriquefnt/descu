@@ -9,7 +9,8 @@ include __DIR__ . '/funciones.php';
 $result = findAll($pdo, 'aopzonas');
 
 
-$sql='call lista_simple;';
+// $sql='call lista_simple;';
+$sql='call lista_ultimo_crl;';
 
 $casos = $pdo->query($sql);
 
