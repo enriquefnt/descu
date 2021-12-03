@@ -26,7 +26,6 @@ if (isset($_POST['AOP'])) { ?>
 			<thead>
 			<tr class="w3-grey">
 				<th>Nombre</th>
-			<!--	<th>Area Operativa Nombre</th> -->
 				<th>Edad (AMD)</th>
 				<th>Fecha Control</th>
 				<th>Peso</th>
@@ -53,24 +52,28 @@ if (isset($_POST['AOP'])) {
 foreach ($casos as $caso): ?>
    <?php if  ($caso['idaop']==$aop) {?>
 
-		<tbody>
-			<tr class="w3-hover-pale-green">
-				<td align="left"><?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?></td>
-			<!--	<td align="left"><?= htmlspecialchars($caso['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?></td> -->
-				<td align="right"><?= htmlspecialchars($caso['años'] .'A ' . $caso['meses'] .'M ' . $caso['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['FechaCtrl'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['Peso'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['Talla'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['ZPE'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['ZTE'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($caso['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
-			 	<td><a href="editaDatos.php?id=<?=$caso['idPersona']; ?>">Editar</a></td>
-			 	
-				
+	<tbody>
+		<tr class="w3-hover-pale-green">
+		<td>
 
-			
+   <form target="_blank"  action="lista_controles.php"   method="post">
+   <input type="hidden" name="idPersona" value="<?= htmlspecialchars($caso['idPersona'], 
+          ENT_QUOTES, 'UTF-8'); ?>">
+   <input type="submit" class="button1" value="<?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?>">
+    </form> 
+    </td>
+		<td align="right"><?= htmlspecialchars($caso['años'] .'A ' . $caso['meses'] .'M ' . $caso['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['FechaCtrl'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['Peso'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['Talla'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['ZPE'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['ZTE'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><?= htmlspecialchars($caso['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
+			<td><a href="editaDatos.php?id=<?=$caso['idPersona']; ?>">Editar</a></td>
+			 	
+					
 				<?php $areaOP =$caso['areaoperativa'] ; ?>
 
 			</tr>
