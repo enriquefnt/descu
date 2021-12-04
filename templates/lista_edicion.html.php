@@ -56,9 +56,13 @@ foreach ($casos as $caso): ?>
 		<tr class="w3-hover-pale-green">
 		<td>
 
-   <form target="_blank"  action="lista_controles.php"   method="post">
+   <form   action="lista_controles.php"   method="post">
    <input type="hidden" name="idPersona" value="<?= htmlspecialchars($caso['idPersona'], 
           ENT_QUOTES, 'UTF-8'); ?>">
+   <input type="hidden" name="Nombre" value="<?= htmlspecialchars($caso['Nombre'], 
+          ENT_QUOTES, 'UTF-8'); ?>">
+   <input type="hidden" name="idcontrol" value="<?= htmlspecialchars($caso['idcontrol'], 
+          ENT_QUOTES, 'UTF-8'); ?>">       
    <input type="submit" class="button1" value="<?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?>">
     </form> 
     </td>

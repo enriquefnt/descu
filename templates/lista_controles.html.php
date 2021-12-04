@@ -2,7 +2,7 @@
   <table class="w3-table-all w3-tiny">
 <?php 
 
-if (isset($_POST['idPersona'])) { ?>
+// if (isset($_POST['idPersona'])) { ?>
 
 			<thead>
 			<tr class="w3-grey">
@@ -18,7 +18,7 @@ if (isset($_POST['idPersona'])) { ?>
 			</tr>
 		</thead>
 
-	<?php } ?>
+	<?php //} ?>
 
 
 
@@ -41,6 +41,17 @@ if (isset($_POST['idPersona'])) { ?>
 				<?php $areaOP =$control['areaoperativa'] ; ?>
 
 			</tr>
-		
+
+
+
+		</tbody>
   <?php endforeach; ?>
 
+<?php 
+
+if (isset($_POST['idPersona'])) { ?>
+	<h4>Controles registrados de <b> <?= $_POST['Nombre'] ; ?> </b></h4>
+
+<?php } ?>
+</table>
+</div>

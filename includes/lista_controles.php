@@ -6,18 +6,14 @@ include __DIR__ . '/funciones.php';
 
       try {
 
-//$result = findAll($pdo, 'aopzonas');
+if (isset($_POST['idcontrol'])){
 
-$persona= $_POST['idPersona'];
-// $sql='call lista_simple;';
 $sql='call lista_controles('.$_POST['idPersona'].');';
 
 $controles = $pdo->query($sql);
+}
 
 
-//foreach ($controles as $control):
-//echo $control["Talla"];
-//endforeach;
 
 $title = 'Controles';
 //header('Location: /../descu/includes/verlista.php') ;      
@@ -26,6 +22,7 @@ ob_start();
 ///include __DIR__ . '/../templates/verlista.html.php';
 include __DIR__ . '/../templates/lista_controles.html.php';
 $output = ob_get_clean() ;
+
 
 }
   
