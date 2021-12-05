@@ -6,8 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="../estilos/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
- <!-- <link rel="stylesheet" type="text/css" href="../estilos/lay_style.css"> -->
- <link rel="shortcut icon" href="../ico_descu.png">
+ <script src="https://kit.fontawesome.com/07598e026b.js" crossorigin="anonymous"></script>
+ <!--<link rel="stylesheet" type="text/css" href="../estilos/lay_style.css"> -->
+ <link rel="shortcut icon" href="../public/ico_descu.png">
 	<title><?=$title?></title>
 </head>
 

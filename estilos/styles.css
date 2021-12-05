@@ -32,6 +32,12 @@ body {
   height: 100vh;
 }
 
+
+input[type="submit"] {
+    font-family: FontAwesome;
+}
+
+
 .header, .footer {
   flex: none;
 }
