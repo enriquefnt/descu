@@ -15,10 +15,11 @@
 				<th>Z IMC/Edad</th>
 				<th>Por Peso</th>
 				<th>Por Talla</th>
+				<th>Editar</th>
 			</tr>
 		</thead>
 
-	<?php //} ?>
+	
 
 
 
@@ -38,7 +39,7 @@
 				<td><?= htmlspecialchars($control['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($control['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($control['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<?php $areaOP =$control['areaoperativa'] ; ?>
+				<td><a href="editaControl.php?id=<?=$control['idcontrol']; ?>">Editar</a></td>
 
 			</tr>
 

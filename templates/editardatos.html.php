@@ -1,4 +1,3 @@
-<p> <?=   $datosCaso[0] .' ' . $datosCaso[1] .' ' .$datosCaso[2] .' ' . $datosCaso['AOP'] .' ' . $datosCaso[3] ?></p>
 
 <div>
     <fieldset >

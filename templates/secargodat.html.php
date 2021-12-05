@@ -16,8 +16,6 @@ foreach ($casos as $caso) {
 
 
 
-
-
 <div class="w3-conteiner w3-responsive">
     <fieldset>
 <P><b><?=$nombres;?></b> del área operativa <b><?=$areas;?></b> se cargo correctamente </P>

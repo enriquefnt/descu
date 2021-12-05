@@ -62,9 +62,11 @@ $record = [		'idPersona' => $_POST['idP'],
 
 		if (isset($_GET['id'])) {
 			$datosCaso = findById($pdo, 'persona', 'idPersona', $_GET['id']);
+		
 		}
 
 		$result = findAll($pdo, 'aopzonas');
+		
 		$title = 'Editar';
 
 		ob_start();

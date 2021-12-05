@@ -17,7 +17,7 @@ $casos = $pdo->query($sql);
 $title = 'Listado';
 
 ob_start();
-///include __DIR__ . '/../templates/verlista.html.php';
+
 include __DIR__ . '/../templates/lista_edicion.html.php';
 $output = ob_get_clean() ;
 
