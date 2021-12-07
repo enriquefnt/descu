@@ -4,7 +4,7 @@
   
 
 <div>
-    <fieldset style = "width:30%">
+    <fieldset style = "width:40%">
       <legend>Buscar Caso</legend>
 <form class="w3-container w3-light-grey"  action="" autocomplete="off" method="post" >
  

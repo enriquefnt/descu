@@ -44,7 +44,13 @@ $record = [		'idcontrol' => $_POST['id'],
 
 		if (isset($_GET['id'])) {
 			$datosControl = findById($pdo, 'control', 'idcontrol', $_GET['id']);
-		}
+					
+ 		$query = $pdo->prepare('call control_id('.$_GET['id'].')');
+		$query->execute();
+		$row = $query->fetch();		
+
+			}
+
 
 		
 		$title = 'Editar';
