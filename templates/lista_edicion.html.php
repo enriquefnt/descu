@@ -3,8 +3,8 @@
 <form action="" method="post">
   <label for="AOP">Seleccione el área operativa:</label>
  
-   <select name="AOP" required="required" id="AOP" placeholder="Seleccionar">
-<!--<option value=0>Seleccione AOP</option> -->
+   <select name="AOP" required="required" id="AOP" >
+<option value=0>Seleccione AOP</option> 
 <?php
 $aop = [];
   foreach ($result as $aop) {
