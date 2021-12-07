@@ -53,8 +53,8 @@ $record = [		'idPersona' => $_POST['idP'],
 
 
 
-  	
-  		header("location: verlista.php");
+  	//header('Location: /../descu/includes/secargoDat.php')	;
+  header("location: verlista.php");
   				
 
   									}

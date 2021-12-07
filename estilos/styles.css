@@ -34,7 +34,9 @@ body {
 
 
 input[type="submit"] {
-    font-family: FontAwesome;
+    font-family: FontAwesome sans-serif;
+    display: inline-block;
+  position: relative;
 }
 
 

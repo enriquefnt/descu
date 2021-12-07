@@ -3,8 +3,8 @@
 <form action="" method="post">
   <label for="AOP">Seleccione el área operativa:</label>
  
-   <select name="AOP" required="required" id="AOP">
-<option value=0>Seleccione AOP</option>
+   <select name="AOP" required="required" id="AOP" placeholder="Seleccionar">
+<!--<option value=0>Seleccione AOP</option> -->
 <?php
 $aop = [];
   foreach ($result as $aop) {
@@ -44,28 +44,16 @@ if (isset($_POST['AOP'])) { ?>
 
 <?php 
 
-if (isset($_POST['AOP'])) {
+if (isset($_POST['AOP'])&& $_POST['AOP'] > 0) {
 	$aop= $_POST['AOP'];
-}
+
 
 foreach ($casos as $caso): ?>
-   <?php if  ($caso['idaop']==$aop) {?>
+   <?php if  ($caso['idaop']==$aop && $caso['idPersona'] != null) {?>
 
 	<tbody>
 		<tr class="w3-hover-pale-green">
-	<!-- 	<td>
-
-  <form   action="lista_controles.php"   method="post">
-   <input type="hidden" name="idPersona" value="<?= htmlspecialchars($caso['idPersona'], 
-          ENT_QUOTES, 'UTF-8'); ?>">
-   <input type="hidden" name="Nombre" value="<?= htmlspecialchars($caso['Nombre'], 
-          ENT_QUOTES, 'UTF-8'); ?>">
-   <input type="hidden" name="idcontrol" value="<?= htmlspecialchars($caso['idcontrol'], 
-          ENT_QUOTES, 'UTF-8'); ?>">       
-   <input type="submit" class="button1" value="<?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?>">
-    </form> 
-    </td> -->
-    		<td><?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?></td>
+	   		<td><?= htmlspecialchars($caso['Nombre'], ENT_QUOTES, 'UTF-8'); ?></td>
 		    <td align="right"><?= htmlspecialchars($caso['años'] .'A ' . $caso['meses'] .'M ' . $caso['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
 			<td><?= htmlspecialchars($caso['FechaCtrl'], ENT_QUOTES, 'UTF-8'); ?></td>
 			<td align="center"><?= htmlspecialchars($caso['Peso'], ENT_QUOTES, 'UTF-8').' ('.$caso['ClaPe'].')'; ?></td>
@@ -106,11 +94,11 @@ foreach ($casos as $caso): ?>
 
 			</tr>
 			<?php } ?>
-  <?php endforeach; ?>
+  <?php endforeach; } ?>
 
 <?php 
 
-if (isset($_POST['AOP'])) { ?>
+if (isset($_POST['AOP'])&& $_POST['AOP'] > 0) { ?>
 	<h4><?='Area Operativa: '. $areaOP .  ' al día ' . date("d-m-Y "); ?></h4>
 
 <?php } ?>

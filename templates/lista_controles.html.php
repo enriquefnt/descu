@@ -39,7 +39,7 @@
 				<td><?= htmlspecialchars($control['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($control['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($control['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><a href="editaControl.php?id=<?=$control['idcontrol']; ?>">Editar</a></td>
+				<td><a href="editaControl.php?id=<?=$control['idcontrol']; ?>"><i class="far fa-edit"></i></a></td>
 
 			</tr>
 
