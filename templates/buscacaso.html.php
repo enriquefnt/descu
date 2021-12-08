@@ -28,16 +28,15 @@ if ((isset($_POST['Nombre'])) && ($_POST['idPersona'])=='xxxx') { ?>
 
  <?php } 
 
-elseif (isset($_POST['Nombre'])) { ?> 
+elseif (isset($_POST['idPersona'])) { ?> 
  
  <button class="w3-btn w3-green"> 
-<a href="../includes/cargaControl.php">Tiene registrados los datos, cargar control</a>
+<a href="../includes/nuevoControl.php?id=<?=$_POST['idPersona']; ?>">Tiene registrados los datos, cargar control</a>
 </button>
 
  <?php } ?>
 
  
-
 </div>
 
 <script>

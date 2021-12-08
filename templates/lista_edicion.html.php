@@ -3,8 +3,8 @@
 <form action="" method="post">
   <label for="AOP">Seleccione el área operativa:</label>
  
-   <select name="AOP" required="required" id="AOP" >
-<option value=0>Seleccione AOP</option> 
+   <select name="AOP" required="required" id="AOP">
+<option value=0>Seleccione AOP</option>
 <?php
 $aop = [];
   foreach ($result as $aop) {
@@ -44,12 +44,12 @@ if (isset($_POST['AOP'])) { ?>
 
 <?php 
 
-if (isset($_POST['AOP'])&& $_POST['AOP'] > 0) {
+if (isset($_POST['AOP'])) {
 	$aop= $_POST['AOP'];
-
+}
 
 foreach ($casos as $caso): ?>
-   <?php if  ($caso['idaop']==$aop && $caso['idPersona'] != null) {?>
+   <?php if  ($caso['idaop']==$aop) {?>
 
 	<tbody>
 		<tr class="w3-hover-pale-green">
@@ -77,7 +77,7 @@ foreach ($casos as $caso): ?>
           ENT_QUOTES, 'UTF-8'); ?>">       
 <!--  <input type="submit" class="search" value="&#xf06e"> -->
     
-   <div >
+   <div>
                         <button class="btn btn-default" type="submit"><i class="far fa-eye  fa-lg"></i></button>
                     </div>
 
@@ -94,11 +94,11 @@ foreach ($casos as $caso): ?>
 
 			</tr>
 			<?php } ?>
-  <?php endforeach; } ?>
+  <?php endforeach; ?>
 
 <?php 
 
-if (isset($_POST['AOP'])&& $_POST['AOP'] > 0) { ?>
+if (isset($_POST['AOP'])) { ?>
 	<h4><?='Area Operativa: '. $areaOP .  ' al día ' . date("d-m-Y "); ?></h4>
 
 <?php } ?>
