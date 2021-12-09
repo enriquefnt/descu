@@ -3,7 +3,7 @@ include __DIR__ . '/../includes/conect.php';
 include __DIR__ . '/../includes/funciones.php';
 
 try {
-	if (isset($_POST['id'])) {
+	if (isset($_POST['idPersona'])) {
 
 /*
 
@@ -41,13 +41,16 @@ $record = [		'idcontrol' => $_POST['id'],
 							 	'Talla' =>$_POST['Talla'],
 							    'Observaciones' =>$_POST['Observaciones']];
 insert($pdo, 'control', $record);
+//session_unset();
+
 session_unset();
 
 
+header('Location: /../descu/includes/secargoCtrl.php')	;	 
 
 
 	
-  		header("location: verlista.php");
+  		
 		
  									}
 		else {

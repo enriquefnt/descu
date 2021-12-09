@@ -6,7 +6,8 @@ include __DIR__ . '/funciones.php';
 
       try {
 
-$result = findAll($pdo, 'aopzonas');
+$result = findAll($pdo, 'aopzonas','areaoperativa');
+
 
 
 // $sql='call lista_simple;';

@@ -18,7 +18,7 @@
  <label for="Peso">Talla</label><br>
  <input type="number"  step="0.01" min="45" max="170" id="Talla" name="Talla" value=""><br><br>
  <label for="Observaciones">Observaciones:</label><br>
-<textarea id="Observaciones" name="Observaciones" rows="3" cols="40">
+<textarea id="Observaciones" name="Observaciones" rows="3" cols="20">
 </textarea>
 
 

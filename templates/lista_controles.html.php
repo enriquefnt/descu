@@ -13,8 +13,6 @@
 				<th>Z Peso/Edad</th>
 				<th>Z Talla/Edad</th>
 				<th>Z IMC/Edad</th>
-				<th>Por Peso</th>
-				<th>Por Talla</th>
 				<th>Editar</th>
 			</tr>
 		</thead>
@@ -32,13 +30,11 @@
 			<tr class="w3-hover-pale-green">
 				<td><?= htmlspecialchars($control['FechaCtrl'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td align="right"><?= htmlspecialchars($control['años'] .'A ' . $control['meses'] .'M ' . $control['dias'] .'D ', ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($control['Peso'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($control['Talla'], ENT_QUOTES, 'UTF-8'); ?></td>
+				<td align="center"><?= htmlspecialchars($control['Peso'], ENT_QUOTES, 'UTF-8').' ('.$control['ClaPe'].')'; ?></td>
+			<td><?= htmlspecialchars($control['Talla'], ENT_QUOTES, 'UTF-8').' ('.$control['ClaTa'].')'; ?></td>
 				<td><?= htmlspecialchars($control['ZPE'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($control['ZTE'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><?= htmlspecialchars($control['ZIMC'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($control['ClaPe'], ENT_QUOTES, 'UTF-8'); ?></td>
-				<td><?= htmlspecialchars($control['ClaTa'], ENT_QUOTES, 'UTF-8'); ?></td>
 				<td><a href="editaControl.php?id=<?=$control['idcontrol']; ?>"><i class="far fa-edit"></i></a></td>
 
 			</tr>
@@ -46,12 +42,18 @@
 
 
 		</tbody>
-  <?php endforeach; ?>
+  <?php 
+endforeach; 
+  $areaoperativa=$control['areaoperativa'];
+  ?>
+
+
+
 
 <?php 
 
 if (isset($_POST['idPersona'])) { ?>
-	<h4>Controles registrados de <b> <?= $_POST['Nombre'] ; ?> </b></h4>
+	<h4>Controles registrados de <b> <?= $_POST['Nombre'] ; ?> </b> - <?= $areaoperativa ; ?></h4>
 
 <?php } ?>
 </table>

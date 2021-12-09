@@ -20,7 +20,7 @@
 <textarea id="Observaciones" name="Observaciones" rows="3" cols="20"></textarea>
 
 
- <input type="submit"  name="submit"  class="w3-button w3-black" value="Guardar Cambios">
+ <input type="submit"  name="submit"  class="w3-button w3-black" value="Guardar ">
 
 </form> 
 

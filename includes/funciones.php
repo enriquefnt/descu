@@ -99,8 +99,9 @@ function delete($pdo, $table, $primaryKey, $id ) {
 }
 
 
-function findAll($pdo, $table) {
-	$result = query($pdo, 'SELECT * FROM `' . $table . '`');
+function findAll($pdo,  $table, $ord) {
+	$result = query($pdo, 'SELECT * FROM `' . $table . '`
+order by `' . $ord. '` ');
 
 	return $result->fetchAll();
 }

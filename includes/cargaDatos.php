@@ -35,7 +35,7 @@ else {
 
    
 
-$result = findAll($pdo, 'aopzonas');
+$result = findAll($pdo, 'aopzonas' ,'areaoperativa');
  $title = 'Carga Datos';
  
 

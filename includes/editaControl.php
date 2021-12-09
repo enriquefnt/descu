@@ -35,9 +35,9 @@ $record = [		'idcontrol' => $_POST['id'],
 
 
 
-
+header('Location: /../descu/includes/secargoCtrl.php')	;
 	
-  		header("location: verlista.php");
+  		//header("location: verlista.php");
 		
  									}
 		else {
