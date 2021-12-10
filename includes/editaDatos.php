@@ -65,7 +65,7 @@ $record = [		'idPersona' => $_POST['idP'],
 		
 		}
 
-		$result = findAll($pdo, 'aopzonas');
+		$result = findAll($pdo, 'aopzonas','areaoperativa');
 		
 		$title = 'Editar';
 

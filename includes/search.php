@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/conect.php';
 
-// (B) DO SEARCH
+// realiza la búsqueda
 $data = [];
 
     $stmt = $pdo->prepare("SELECT CONCAT(Nombre,' ',Apellido) as nomApe, idPersona FROM persona WHERE CONCAT(Nombre,' ',Apellido) LIKE ? ");

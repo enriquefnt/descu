@@ -5,37 +5,9 @@ include __DIR__ . '/../includes/funciones.php';
 try {
 	if (isset($_POST['idPersona'])) {
 
-/*
 
-$record = [		'idcontrol' => $_POST['id'],
-	 			'FechaControl' => $_POST['`FechaControl`'],
-				'Peso' => $_POST['Peso'],
-				'Talla' =>$_POST['Talla'],
-				'Observaciones' =>$_POST['Observaciones']] ;
-
-	update($pdo, 'control', 'idcontrol',$record);
-
-
-
-
-
-		$id = $_POST['id'];
-  		$FechaControl = $_POST['FechaControl']; 
-  		$Peso = $_POST['Peso'];
-  		$Talla = $_POST['Talla'];
-  		$Observaciones = $_POST['Observaciones'];
-		  		$sql = "UPDATE `control` SET 
-			  		`FechaControl`= '$FechaControl',
-			  		`Peso`= '$Peso',
-			  		`Talla`='$Talla',
-			  		`Observaciones`= '$Observaciones'
-			  	where `idcontrol`=$id";
-  		$pdo->exec($sql); 	
-*/
-  		$record = [
-	 							
-	 						
-	 							'idPersona' => $_POST['idPersona'],
+  		$record = [			
+								'idPersona' => $_POST['idPersona'],
 	 							'FechaControl' => $_POST['FechaControl'],
 							 	'Peso' => $_POST['Peso'],
 							 	'Talla' =>$_POST['Talla'],
@@ -43,7 +15,7 @@ $record = [		'idcontrol' => $_POST['id'],
 insert($pdo, 'control', $record);
 //session_unset();
 
-session_unset();
+//session_unset();
 
 
 header('Location: /../descu/includes/secargoCtrl.php')	;	 

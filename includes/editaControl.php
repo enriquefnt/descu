@@ -18,7 +18,7 @@ $record = [		'idcontrol' => $_POST['id'],
 
 */
 
-
+		$idPersona=$_POST['idPersona'];
 		$id = $_POST['id'];
   		$FechaControl = $_POST['FechaControl']; 
   		$Peso = $_POST['Peso'];
