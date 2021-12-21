@@ -22,6 +22,10 @@ header('Location: /../descu/includes/secargoCtrl.php')	;
 
 }
 
+
+
+
+
  $title = 'Carga Controles';
 ob_start();
 include __DIR__ . '/../templates/cargaControl.html.php';

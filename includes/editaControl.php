@@ -35,7 +35,22 @@ $record = [		'idcontrol' => $_POST['id'],
 
 
 
-header('Location: /../descu/includes/secargoCtrl.php')	;
+
+$sql='call lista_controles('.$_POST['idPersona'].');';
+
+$controles = $pdo->query($sql);
+
+$idP=$_POST['idPersona'];
+
+
+
+session_unset();
+
+
+header('Location: /../descu/includes/seEditoCtrl.php?id='.$_POST['idPersona'].'')	;	
+
+
+// header('Location: /../descu/includes/lista_controles.php')	;
 	
   		//header("location: verlista.php");
 		
