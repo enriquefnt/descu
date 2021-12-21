@@ -52,8 +52,8 @@ endforeach;
 
 <?php 
 
-if (isset($_POST['idPersona'])) { ?>
-	<h4>Controles registrados de <b> <?= $_POST['Nombre'] ; ?> </b> - <?= $areaoperativa ; ?></h4>
+if (isset($control['areaoperativa'])) { ?>
+	<h4>Controles registrados de <b> <?= $control['Nombre'] ; ?> </b> - <?= $areaoperativa ; ?></h4>
 
 <?php } ?>
 </table>
