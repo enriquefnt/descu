@@ -48,12 +48,7 @@ session_unset();
 
 
 header('Location: /../descu/includes/seEditoCtrl.php?id='.$_POST['idPersona'].'')	;	
-
-
-// header('Location: /../descu/includes/lista_controles.php')	;
 	
-  		//header("location: verlista.php");
-		
  									}
 		else {
 

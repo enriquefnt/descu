@@ -17,7 +17,7 @@
 
   <label for="Sexo">Sexo:</label><br>
   <select name="Sexo" id="Sexo" value="<?=$datosCaso['Sexo'] ?? ''?>">
-    <option value='<?=$datosCaso['Sexo'] ?? ''?>'><?=$datosCaso['Sexo'] ?? ''?></option>
+    <option value='<?=$datosCaso['Sexo'] ?? ''?>'><?=$fila['Sex'] ?? ''?></option>
     <option value='1'>Masculino</option>
     <option value='2'>Femenino</option>
     <option value='3'>No determinado</option>
@@ -29,7 +29,7 @@
 
  <label for="AOP">Area Operativa:</label><br>
   <select name="AOP" required="required" id="AOP">
-  <option  type="hidden" value="<?=$datosCaso['AOP'] ?? ''?>"><?=$datosCaso['AOP'] ?? ''?></option>
+  <option  type="number" value="<?=$datosCaso['AOP'] ?? ''?>"><?=$fila['areaoperativa'] ?? ''?></option>
 <?php
 $aop = [];
   foreach ($result as $aop) {

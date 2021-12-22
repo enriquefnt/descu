@@ -61,11 +61,27 @@ $record = [		'idPersona' => $_POST['idP'],
 		else {
 
 		if (isset($_GET['id'])) {
-			$datosCaso = findById($pdo, 'persona', 'idPersona', $_GET['id']);
-		
-		}
+		$datosCaso = findById($pdo, 'persona', 'idPersona', $_GET['id']);
+			}
+
+			
+	
 
 		$result = findAll($pdo, 'aopzonas','areaoperativa');
+
+		//$sql='call saltaped_relbas.persona_id('.$_GET['id'].')';
+		//$fila = $pdo->query($sql);
+
+		$query = $pdo->prepare('call saltaped_relbas.persona_id('.$_GET['id'].')');
+    	$query->execute();
+    	$fila = $query->fetch();	
+
+
+
+
+
+
+
 		
 		$title = 'Editar';
 

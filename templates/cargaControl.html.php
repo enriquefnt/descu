@@ -9,12 +9,12 @@
 
 
  <label for="dName">Buscar caso:</label><br>
-  <input type="text" name="Nombre" id="dName"><br><br>
- <input type="hidden"name="idPersona" id="dTel" value="idPersona"><br><br>
+  <input type="text" name="Nombre" id="dName"><br>
+ <input type="hidden"name="idPersona" id="dTel" value="idPersona">
   <label for="FechaControl">Fecha de control:</label><br>
-  <input type="date" id="FechaControl" name="FechaControl" value=""><br><br>
+  <input type="date" id="FechaControl" name="FechaControl" value=""><br>
   <label for="Peso">Peso</label><br>
- <input type="number" step="0.01" min="1" max="60"id="Peso" name="Peso" value=""><br><br>
+ <input type="number" step="0.01" min="1" max="60"id="Peso" name="Peso" value=""><br>
  <label for="Peso">Talla</label><br>
  <input type="number"  step="0.1" min="45" max="170" id="Talla" name="Talla" value=""><br><br>
  <label for="Observaciones">Observaciones:</label><br>
