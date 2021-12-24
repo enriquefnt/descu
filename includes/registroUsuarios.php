@@ -1,17 +1,3 @@
-<!--
-CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(45) DEFAULT NULL,
-  `apellido` varchar(45) DEFAULT NULL,
-  `areaoperativa` int(2) DEFAULT NULL,
-  `profesión` int(1) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `usuario` varchar(45) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--->
 
 
 <?php
@@ -37,6 +23,7 @@ $registro = [
 
 
 echo $registro['apellido'];echo $registro['AOP']; echo $registro['password'];
+print_r($registro);
 
 insert ($pdo, 'usuarios', $registro);
 session_unset();

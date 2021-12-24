@@ -17,7 +17,7 @@ CREATE TABLE `usuarios` (
 <div>
     <fieldset >
       <legend>Registro de Usuarios</legend>
-<form class="w3-group w3-light-grey" action="registroUsuarios.php" method="post" >
+<form class="w3-group w3-light-grey" action="" method="post" >
     <label for="Nombre">Nombre:</label><br>
   <input type="text" required="required" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off" value=""><br><br>
   <label for="Apellido">Apellido:</label><br>

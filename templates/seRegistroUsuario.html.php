@@ -4,7 +4,7 @@
 foreach ($usuarios as $usuario) {
  
     $nombres=$usuario['nombre'];
-    $areas=$usuario['areaoperativa'];       
+    $areas=$usuario['AOP'];       
     }	
  
 
