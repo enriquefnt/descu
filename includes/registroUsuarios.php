@@ -18,12 +18,9 @@ $registro = [
       				'AOP' => $_POST['AOP'],
       				'email' => strtolower($_POST['email']),
       				'usuario' => $_POST['usuario'],
-      				'password' => $_POST['password']];
+      				'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)];
 
 
-
-echo $registro['apellido'];echo $registro['AOP']; echo $registro['password'];
-print_r($registro);
 
 insert ($pdo, 'usuarios', $registro);
 session_unset();

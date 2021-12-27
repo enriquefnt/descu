@@ -28,6 +28,7 @@
 		<a href="../includes/buscacaso.php"class="w3-bar-item w3-button">Carga Datos</a>&nbsp &nbsp
 		<a href="../includes/cargaControl.php"class="w3-bar-item w3-button">Carga Controles</a>&nbsp &nbsp
 		<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>
+		<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
 </div>
 </div>
 </header >

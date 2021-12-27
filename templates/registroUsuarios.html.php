@@ -19,9 +19,9 @@ CREATE TABLE `usuarios` (
       <legend>Registro de Usuarios</legend>
 <form class="w3-group w3-light-grey" action="" method="post" >
     <label for="Nombre">Nombre:</label><br>
-  <input type="text" required="required" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off" value=""><br><br>
+  <input type="text" required="required" id="nombre" name="nombre" placeholder="Nombre" autocomplete="off" value=""><br>
   <label for="Apellido">Apellido:</label><br>
-  <input type="text" required="required" id="apellido" name="apellido" placeholder="Apellido" autocomplete="off" value=""><br><br>
+  <input type="text" required="required" id="apellido" name="apellido" placeholder="Apellido" autocomplete="off" value=""><br>
 
 
 
@@ -34,7 +34,7 @@ CREATE TABLE `usuarios` (
     <option value='5'>Administrativo</option>
     <option value='6'>Otros</option>
     </select>
-    <br><br>
+    <br>
 
 <label for="AOP">Area Operativa:</label><br>
 <select name="AOP" required="required" id="AOP">
@@ -45,16 +45,16 @@ $aop = [];
  echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
   }
 ?>
-<br><br>
+  </select>
+<br>
   <label for="email">Correo electronico:</label><br>
-  <input type="text" required="required" id="email" name="email" placeholder="Correo electrónico" autocomplete="off" value=""><br><br>
-  </select><br><br>
+  <input type="text" required="required" id="email" name="email" placeholder="Correo electrónico" autocomplete="off" value=""><br>
+  </select>
 <label for="usuario">Usuario:</label><br>
-  <input type="text" required="required" id="ususario" name="usuario" placeholder="Elija nombre de usuario" autocomplete="off" value=""><br><br>
+  <input type="text" required="required" id="ususario" name="usuario" placeholder="Elija nombre de usuario" autocomplete="off" value=""><br>
   </select>
 <label for="password">Contraseña:</label><br>
   <input type="text" required="required" id="password" name="password" placeholder="Elija una contraseña" autocomplete="off" value=""><br><br>
-  
-  <input type="submit"  class="w3-button w3-black" value="Cargar">
+    <input type="submit"  class="w3-button w3-black" value="Cargar">
 </fieldset>
 </div>
