@@ -13,7 +13,8 @@ $record = [
 	 							'FechaControl' => $_POST['FechaControl'],
 							 	'Peso' => $_POST['Peso'],
 							 	'Talla' =>$_POST['Talla'],
-							    'Observaciones' =>$_POST['Observaciones']];
+							  'Observaciones' =>$_POST['Observaciones'],
+							    'idUser' =>$_POST['idUser']];
 insert($pdo, 'control', $record);
 session_unset();
 

@@ -3,7 +3,7 @@
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
 
-
+session_start();
 
 	if(isset($_POST['login'])) {
 		$errMsg = '';
@@ -31,14 +31,23 @@ include __DIR__ . '/funciones.php';
 				}
 				else {
 
-				//	if($Contraseña == $data['password'])
 						if (password_verify($Contraseña, $data['password']))
 					 {
-						$_SESSION['name'] = $data['apellido'];
-						$_SESSION['username'] = $data['NomUsuario'];
-						$_SESSION['password'] = $data['Contraseña'];
-						
+						$_SESSION['apellido'] = $data['apellido'];
+
+						$_SESSION['nombre'] = $data['nombre'];
+
+						$_SESSION['AOP'] = $data['AOP'];
+
+						$_SESSION['tipo'] = $data['tipo'];
+
+						$_SESSION['idUser'] = $data['id'];
+
+
+						print_r($_SESSION);
 						header('Location: /descu/public/index.php');
+						
+
 						exit;
 					}
 					else
@@ -55,7 +64,7 @@ include __DIR__ . '/funciones.php';
 <html>
 <head>
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="/reglog/include/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilo_login.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <header class="login-header">

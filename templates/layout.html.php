@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <!DOCTYPE html>
 <html style=" height:100%;">
 <head>
@@ -17,6 +22,13 @@
 <header class="w3-row-padding header w3-blue-grey">
 <h1>Registro de Controles Antropométricos</h1>
 <h3>Sectores descubiertos</h3>
+<p>Usuario:
+	<?php 
+	if(isset($_SESSION['nombre'])) {
+	echo $_SESSION['nombre'];
+	}
+	?>
+</p>
 
 
 

@@ -1,8 +1,18 @@
 <!-- <link rel="stylesheet" type="text/css" href="../estilos/estilo.css"> -->
+  
+  <?php 
+session_start();
+?>
+
   <script src="../js/autocompleta.js"></script>
   
 
 <div>
+ <?php 
+  if(isset($_SESSION['nombre'])) {
+  echo 'usuario' .$_SESSION['nombre'];
+  }
+  ?>
     <fieldset>
       <legend>Control</legend>
 <form class="w3-container w3-light-grey" autocomplete="off" method="post" action=""?>
@@ -20,6 +30,8 @@
  <label for="Observaciones">Observaciones:</label><br>
 <textarea id="Observaciones" name="Observaciones" rows="3" cols="20">
 </textarea>
+<input type="hidden" name="idUser"  value=<?= $_SESSION['idUser'] ?> >
+  
 
 
 <input type="submit" value="Cargar">
