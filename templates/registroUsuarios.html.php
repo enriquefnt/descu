@@ -1,18 +1,7 @@
+<?php 
+session_start();
+?>
 
-<!--
-CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(45) DEFAULT NULL,
-  `apellido` varchar(45) DEFAULT NULL,
-  `areaoperativa` int(2) DEFAULT NULL,
-  `profesión` int(2) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `usuario` varchar(45) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--->
 
 <div>
     <fieldset >

@@ -21,12 +21,23 @@
 <header class="w3-row-padding header w3-blue-grey">
 <h1>Registro de Controles Antropométricos</h1>
 <h3>Sectores descubiertos</h3>
-<p>Usuario:
-	<?php 
+<p>
+	<?php if ($_SESSION['tipo'] == 0){ 
+	echo  'Usuario:' ;
+	} else { echo '
+	Administrador:' ;} ?>
+	<b><?php 
 	if(isset($_SESSION['nombre'])) {
-	echo $_SESSION['nombre'] . ' ' . $_SESSION['tipo'] ;
+		echo $_SESSION['nombre'];
 	}
-	?>
+	?></b>
+	&nbsp&nbsp		Area Operativa:
+	<b><?php 
+	if(isset($_SESSION['nombre'])) {
+		echo $_SESSION['AreaOperativa'];
+	}
+	?></b>
+
 </p>
 
 
@@ -38,15 +49,21 @@
   		<a href="../public/index.php" class="w3-bar-item w3-button">Inicio</a>
 		<a href="../includes/buscacaso.php"class="w3-bar-item w3-button">Carga Datos</a>&nbsp &nbsp
 		<a href="../includes/cargaControl.php"class="w3-bar-item w3-button">Carga Controles</a>&nbsp &nbsp
+
+
+
 		<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>
-		<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
+
+
+		
 
 <?php 
 	if(isset($_SESSION['nombre']) && ($_SESSION['tipo']==1)) { ;?>
-	<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>
+	<a href="../includes/registroUsuarios.php"class="w3-bar-item w3-button ">Registar Usuario</a></li>
 	<?php } ?>
 	
 
+	<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
 </div>
 </div>
 </header >

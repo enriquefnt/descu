@@ -1,3 +1,10 @@
+<?php 
+if (is_null($_SESSION['nombre'])) {
+session_start();
+}
+?>
+
+
 <?php
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';

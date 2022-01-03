@@ -20,7 +20,9 @@ session_start();
 
 		if($errMsg == '') {
 			try {
-			$stmt = $pdo->prepare('SELECT id,nombre ,  apellido usuario, password FROM usuarios WHERE usuario = :NomUsuario');
+			$stmt = $pdo->prepare('SELECT * FROM usuarios 
+				inner join aopzonas on `AOP` = `idaop`
+				WHERE usuario = :NomUsuario');
 				$stmt->execute(array(
 					':NomUsuario' => $NomUsuario
 					));
@@ -38,6 +40,8 @@ session_start();
 						$_SESSION['nombre'] = $data['nombre'];
 
 						$_SESSION['AOP'] = $data['AOP'];
+
+						$_SESSION['AreaOperativa'] = $data['areaoperativa'];
 
 						$_SESSION['tipo'] = $data['tipo'];
 

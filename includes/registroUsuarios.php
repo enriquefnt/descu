@@ -4,6 +4,11 @@
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
 
+
+
+
+
+
  try {
 
 
@@ -23,7 +28,7 @@ $registro = [
 
 
 insert ($pdo, 'usuarios', $registro);
-session_unset();
+//session_unset();
 header('Location: /../descu/includes/seRegistroUsuario.php')	;	 
 
 

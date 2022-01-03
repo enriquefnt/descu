@@ -1,8 +1,18 @@
 <?php 
+if (is_null($_SESSION['nombre'])) {
 session_start();
+}
+?>
+
+<?php
+if ($_SESSION['tipo']== 1){
+
 ?>
 
 <form action="" method="post">
+
+
+
   <label for="AOP">Seleccione el área operativa:</label>
  
    <select name="AOP" required="required" id="AOP">
@@ -18,7 +28,7 @@ $aop = [];
   <input type="submit"  value="Seleccionar">
 
 </form>
-
+<?php  } ?>
 <div class="w3-responsive">
   <table class="w3-table-all w3-tiny">
 <?php 
@@ -46,9 +56,11 @@ if (isset($_POST['AOP'])) { ?>
 
 <?php 
 
-if (isset($_POST['AOP'])) {
+if (isset($_POST['AOP'] )&& $_SESSION['tipo']==1) {
 	$aop= $_POST['AOP'];
 }
+
+else {$aop=$_SESSION['AOP'];}
 
 foreach ($casos as $caso): ?>
    <?php if  ($caso['idaop']==$aop) {?>
@@ -100,7 +112,7 @@ foreach ($casos as $caso): ?>
 
 <?php 
 
-if (isset($_POST['AOP'])) { ?>
+if (isset($_POST['AOP']) || isset($_SESSION['AOP'])) { ?>
 	<h4><?='Area Operativa: '. $areaOP .  ' al día ' . date("d-m-Y "); ?></h4>
 
 <?php } ?>

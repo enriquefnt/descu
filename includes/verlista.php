@@ -1,7 +1,7 @@
 <?php
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
-
+session_start();
 
 
       try {
@@ -17,7 +17,8 @@ $title = 'Listado';
 
 ob_start();
 
-include __DIR__ . '/../templates/lista_edicion.html.php';
+//if(isset($_SESSION['nombre']) && ($_SESSION['tipo']==0)){
+include __DIR__ . '/../templates/lista_edicion.html.php';//}
 $output = ob_get_clean() ;
 
 }
