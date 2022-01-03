@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <?php $title ="Inicio"?>
 <div class="w3-responsive">
 <h2>Registro de controles en sectores descubiertos</h2>

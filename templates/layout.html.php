@@ -1,6 +1,5 @@
-<?php 
-session_start();
-?>
+
+
 
 
 <!DOCTYPE html>
@@ -25,7 +24,7 @@ session_start();
 <p>Usuario:
 	<?php 
 	if(isset($_SESSION['nombre'])) {
-	echo $_SESSION['nombre'];
+	echo $_SESSION['nombre'] . ' ' . $_SESSION['tipo'] ;
 	}
 	?>
 </p>
@@ -41,6 +40,13 @@ session_start();
 		<a href="../includes/cargaControl.php"class="w3-bar-item w3-button">Carga Controles</a>&nbsp &nbsp
 		<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>
 		<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
+
+<?php 
+	if(isset($_SESSION['nombre']) && ($_SESSION['tipo']==1)) { ;?>
+	<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>
+	<?php } ?>
+	
+
 </div>
 </div>
 </header >

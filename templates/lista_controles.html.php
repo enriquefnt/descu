@@ -1,3 +1,8 @@
+<?php 
+session_start();
+?>
+
+
 <div class="w3-responsive">
   <table class="w3-table-all w3-tiny">
 <?php 

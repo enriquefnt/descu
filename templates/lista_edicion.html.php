@@ -1,4 +1,6 @@
-
+<?php 
+session_start();
+?>
 
 <form action="" method="post">
   <label for="AOP">Seleccione el área operativa:</label>
