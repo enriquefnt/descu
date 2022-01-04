@@ -52,8 +52,8 @@
 
 
 
-		<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>
-
+		<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>&nbsp &nbsp
+		<a href="../includes/verF2.php"class="w3-bar-item w3-button ">Ver F2</a></li>&nbsp &nbsp
 
 		
 

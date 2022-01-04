@@ -33,7 +33,7 @@ $aop = [];
   <table class="w3-table-all w3-tiny">
 <?php 
 
-if (isset($_POST['AOP'])) { ?>
+if (isset($_POST['AOP'])||isset($_SESSION['tipo'])) { ?>
 
 			<thead>
 			<tr class="w3-grey">

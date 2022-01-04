@@ -23,7 +23,11 @@ session_start();
   <label for="AOP">Area Operativa:</label><br>
 
 <select name="AOP" required="required" id="AOP">
-<option value=0>Seleccione AOP</option>
+
+<option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>"><?=$_SESSION['AreaOperativa'] ?? ''?></option>
+
+
+<!-- <option value=0>Seleccione AOP</option> -->
 <?php
 $aop = [];
   foreach ($result as $aop) {
@@ -35,20 +39,3 @@ $aop = [];
 </fieldset>
 </div>
 
-<!--
-<div class="w3-container">
-  <h2>W3.CSS Modal</h2>
-  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
-
-  <div id="id01" class="w3-modal">
-    <div class="w3-modal-content">
-      <div class="w3-container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-        <p>Se cargo correctamente</p>
-        
-      </div>
-    </div>
-  </div>
-</div>
-
--->

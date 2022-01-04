@@ -1,8 +1,4 @@
-<?php 
-if (is_null($_SESSION['nombre'])) {
-session_start();
-}
-?>
+
 
 
 <?php
