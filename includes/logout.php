@@ -2,6 +2,6 @@
 	require 'conect.php';
 	session_destroy();
 
-	header('Location: /descu/public/login.php');
+	header('Location: /descu/public/index.php');
 
 ?>
