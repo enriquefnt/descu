@@ -3,7 +3,21 @@ if (is_null($_SESSION['nombre'])) {
 session_start();
 }
 ?>
+<!--<div class="w3-responsive">
+    <fieldset >
+<form class="w3-group w3-light-grey" action="" method="post">
 
+<label for="anioRonda">Año</label><br>
+  <input type="number" id="anioRonda" name="anioRonda" min="2015" value=""><br>
+
+  <label for="numRonda">Ronda</label><br>
+  <input type="number" id="numRonda" name="numRonda" min="1"  max="v"alue=""><br><br>
+  
+  <input type="submit"  value="Seleccionar">
+
+</form>
+</fieldset>
+</div> -->
 <div class="w3-responsive">
   <table class="w3-table-all w3-tiny">
 <?php 
