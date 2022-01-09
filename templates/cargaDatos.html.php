@@ -1,6 +1,9 @@
 <?php 
 session_start();
+$hoy= date("20y-m-d");
+echo $hoy
 ?>
+
 
  <div>
     <fieldset >
@@ -19,21 +22,33 @@ session_start();
     </select>
     <br><br>
   <label for="Nacimiento">Fecha de Nacimiento:</label><br>
-  <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" value=""><br><br>
+  <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" max= "<?=$hoy ?>" value=""><br><br>
   <label for="AOP">Area Operativa:</label><br>
 
 <select name="AOP" required="required" id="AOP">
 
 <option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>"><?=$_SESSION['AreaOperativa'] ?? ''?></option>
 
+    <?php
+    $aop = [];
+      foreach ($result as $aop) {
+     echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
+      }
+    ?>
+</select><br><br>
 
-<!-- <option value=0>Seleccione AOP</option> -->
-<?php
-$aop = [];
-  foreach ($result as $aop) {
- echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
-  }
-?>
+
+<label for="SEC">Sector:</label><br>
+<select name="SEC" required="required" id="SEC">
+<option  type="number" value="">Sector</option>
+
+    <?php
+    $sector = [];
+      foreach ($aopsectores as $sector) {
+     echo '<option value=' .  $sector['SEC'].'>' . $sector['Sector'] .'</option>';
+      }
+    ?>
+
 </select><br><br>
   <input type="submit"  class="w3-button w3-black" value="Cargar">
 </fieldset>

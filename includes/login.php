@@ -36,19 +36,13 @@ session_start();
 						if (password_verify($Contraseña, $data['password']))
 					 {
 						$_SESSION['apellido'] = $data['apellido'];
-
 						$_SESSION['nombre'] = $data['nombre'];
-
 						$_SESSION['AOP'] = $data['AOP'];
-
 						$_SESSION['AreaOperativa'] = $data['areaoperativa'];
-
 						$_SESSION['tipo'] = $data['tipo'];
-
 						$_SESSION['idUser'] = $data['id'];
 
-
-						print_r($_SESSION);
+						
 						header('Location: /descu/public/index.php');
 						
 
@@ -69,7 +63,7 @@ session_start();
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="../estilos/estilo_login.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	 <link rel="shortcut icon" href="ico_descu.png">
 </head>
 <header class="login-header">
 Ingreso a listados

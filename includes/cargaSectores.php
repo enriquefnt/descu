@@ -19,7 +19,9 @@ $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
                
 
 insert ($pdo, 'sectores', $record);
+session_unset();
 
+header('Location: /../descu/includes/secargoSector.php')   ;    
      
 
        {

@@ -16,8 +16,8 @@ $record = [
 				'Apellido' => ucwords(strtolower($_POST['Apellido'])),
 				'Nacimiento' =>$_POST['Nacimiento'],
 				'Sexo' =>$_POST['Sexo'],
-				'AOP' =>$_POST['AOP']];
-
+				'AOP' =>$_POST['AOP'],
+				'SEC' =>$_POST['SEC']];
 
 
 insert ($pdo, 'persona', $record);
@@ -33,6 +33,11 @@ header('Location: /../descu/includes/secargoDat.php')	;
    
 
 $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
+
+$sql='call aop_sectores;';
+
+$aopsectores = $pdo->query($sql);
+
  $title = 'Carga Datos';
  
 
