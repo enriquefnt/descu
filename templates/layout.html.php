@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="../estilos/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
  <script src="https://kit.fontawesome.com/07598e026b.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
  <!--<link rel="stylesheet" type="text/css" href="../estilos/lay_style.css"> -->
  <link rel="shortcut icon" href="../public/ico_descu.png">
 	<title><?=$title?></title>
@@ -31,9 +32,10 @@
 		echo $_SESSION['nombre'];
 	}
 	?></b>
-	&nbsp&nbsp		Area Operativa:
+	
 	<b><?php 
-	if(isset($_SESSION['nombre'])) {
+	if(isset($_SESSION['nombre']) && $_SESSION['tipo'] == 0) {
+		echo "&nbsp&nbsp	&nbsp	Area Operativa: ";
 		echo $_SESSION['AreaOperativa'];
 	}
 	?></b>
@@ -62,7 +64,7 @@
 	<a href="../includes/registroUsuarios.php"class="w3-bar-item w3-button ">Registar Usuario</a></li>
 	<?php } ?>
 	
-
+	<a href="../includes/cargaSectores.php"class="w3-bar-item w3-button ">Cargar Sector</a></li>&nbsp &nbsp
 	<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
 </div>
 </div>

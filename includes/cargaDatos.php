@@ -19,7 +19,7 @@ $record = [
 				'AOP' =>$_POST['AOP']];
 
 
-echo "Registro _ $record[0] _ $record[1]";
+
 insert ($pdo, 'persona', $record);
 session_unset();
 
