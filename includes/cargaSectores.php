@@ -19,8 +19,7 @@ $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
                 'idAop' => ucwords(strtolower($_POST['AOP'])),
                 'Sector' => ucwords(strtolower($_POST['sector']))];
                
-print_r($record);
-echo '  '.$_POST['AOP'] .'  '.$_POST['sector'];
+
 insert ($pdo, 'sectores', $record);
 //session_unset();
 
