@@ -8,7 +8,10 @@
 
 <select name="AOP" required="required" id="AOP">
 
-<option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>"><?=$_SESSION['AreaOperativa'] ?? ''?></option>
+
+<option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>">
+  <?=$_SESSION['AreaOperativa'] ?? ''?>
+</option>
 
 
 <?php

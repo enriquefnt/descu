@@ -23,15 +23,15 @@ $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
 insert ($pdo, 'sectores', $record);
 //session_unset();
 
-//header('Location: /../descu/includes/secargoSector.php')   ;    
+header('Location: /../descu/includes/secargoSector.php')   ;    
      
 
-       {
-            echo '<script>alert("Se cargo correctamente el sector")</script>';
-        }
+ //      {
+//            echo '<script>alert("Se cargo correctamente el sector")</script>';
+//        }
     
 $result = findAll($pdo, 'aopzonas' ,'areaoperativa');      
-$title = 'Carga Sectores';
+$title = ' Sectores';
  
 }
 ob_start();
