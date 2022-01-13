@@ -6,10 +6,10 @@ include __DIR__ . '/funciones.php';
  
 session_start();
 
-    
+if($_SESSION['tipo'] == 1){    
     
 $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
-
+}
   try {
    
     if(isset($_POST['AOP']))

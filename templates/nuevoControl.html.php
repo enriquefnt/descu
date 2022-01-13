@@ -13,7 +13,7 @@ session_start();
 
   <input type="hidden"name="idPersona" id="idPersona" value=<?=$row['idPersona'] ?> >
   <label for="FechaControl">Fecha de control:</label><br>
-  <input type="date" id="FechaControl" name="FechaControl" value=""required><br><br>
+  <input type="date" id="FechaControl" name="FechaControl"  max="<?=date('Y-m-d');?>" value=""required><br><br>
   <label for="Peso">Peso</label><br>
  <input type="number" step="0.01" min="1" max="60"id="Peso" name="Peso" value="" required><br><br>
  <label for="Peso">Talla</label><br>

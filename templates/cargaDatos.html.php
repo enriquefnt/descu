@@ -19,7 +19,7 @@ session_start();
     </select>
     <br><br>
   <label for="Nacimiento">Fecha de Nacimiento:</label><br>
-  <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" value=""><br><br>
+  <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" max="<?=date('Y-m-d');?>" value=""><br><br>
   <label for="AOP">Area Operativa:</label><br>
 
 <select name="AOP" required="required" id="AOP">

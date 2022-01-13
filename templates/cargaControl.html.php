@@ -8,11 +8,7 @@ session_start();
   
 
 <div>
- <?php 
-  if(isset($_SESSION['nombre'])) {
-  echo 'usuario' .$_SESSION['nombre'];
-  }
-  ?>
+ 
     <fieldset>
       <legend>Control</legend>
 <form class="w3-container w3-light-grey" autocomplete="off" method="post" action=""?>
@@ -22,7 +18,7 @@ session_start();
   <input type="text" name="Nombre" id="dName"><br>
  <input type="hidden"name="idPersona" id="dTel" value="idPersona">
   <label for="FechaControl">Fecha de control:</label><br>
-  <input type="date" id="FechaControl" name="FechaControl" value=""><br>
+  <input type="date" id="FechaControl" name="FechaControl" min="2015-01-01"  max="<?=date('Y-m-d');?>" value=""><br>
   <label for="Peso">Peso</label><br>
  <input type="number" step="0.01" min="1" max="60"id="Peso" name="Peso" value=""><br>
  <label for="Peso">Talla</label><br>
