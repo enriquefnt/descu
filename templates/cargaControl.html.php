@@ -10,7 +10,7 @@ session_start();
 <div>
  <?php 
   if(isset($_SESSION['nombre'])) {
-  
+  echo 'usuario' .$_SESSION['nombre'];
   }
   ?>
     <fieldset>

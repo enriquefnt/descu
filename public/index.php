@@ -49,7 +49,7 @@ session_start();
 
 
 						print_r($_SESSION);
-						header('Location: /descu/includes/inicio.php'); 
+						header('Location: /descu/includes/inicio.php');
 						
 
 						exit;
@@ -72,7 +72,7 @@ session_start();
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 </head>
 <header class="login-header">
-Sectores Descubiertos
+Ingreso a listados
 </header>
 
 <body>

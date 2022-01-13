@@ -1,9 +1,11 @@
 <?php
-// Connect to database 
+
    
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
-   
+ 
+session_start();
+
     
     
 $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
@@ -17,11 +19,12 @@ $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
                 'idAop' => ucwords(strtolower($_POST['AOP'])),
                 'Sector' => ucwords(strtolower($_POST['sector']))];
                
-
+print_r($record);
+echo '  '.$_POST['AOP'] .'  '.$_POST['sector'];
 insert ($pdo, 'sectores', $record);
-session_unset();
+//session_unset();
 
-header('Location: /../descu/includes/secargoSector.php')   ;    
+//header('Location: /../descu/includes/secargoSector.php')   ;    
      
 
        {

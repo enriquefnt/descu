@@ -2,6 +2,10 @@
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
 
+
+session_start();
+
+
 $sql='call aop_sectores;';
 
 $aopsectores = $pdo->query($sql);

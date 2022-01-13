@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html style=" height:100%;">
 <head>
@@ -6,8 +10,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="../estilos/styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<script src="https://kit.fontawesome.com/07598e026b.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script src="https://kit.fontawesome.com/07598e026b.js" crossorigin="anonymous"></script>
  <!--<link rel="stylesheet" type="text/css" href="../estilos/lay_style.css"> -->
  <link rel="shortcut icon" href="../public/ico_descu.png">
 	<title><?=$title?></title>
@@ -44,7 +47,7 @@
 <div class="w3-bar w3-border w3-light-grey">
 
 
-  		<a href="../includes/inicio.php" class="w3-bar-item w3-button">Inicio</a>
+  		<a href="../public/index.php" class="w3-bar-item w3-button">Inicio</a>
 		<a href="../includes/buscacaso.php"class="w3-bar-item w3-button">Carga Datos</a>&nbsp &nbsp
 		<a href="../includes/cargaControl.php"class="w3-bar-item w3-button">Carga Controles</a>&nbsp &nbsp
 
@@ -60,8 +63,9 @@
 	<a href="../includes/registroUsuarios.php"class="w3-bar-item w3-button ">Registar Usuario</a></li>
 	<?php } ?>
 	
-	<a href="../includes/cargaSectores.php"class="w3-bar-item w3-button ">Cargar Sector</a></li>&nbsp &nbsp
+<a href="../includes/cargaSectores.php"class="w3-bar-item w3-button ">Cargar Sector</a></li>&nbsp &nbsp
 	<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
+	
 </div>
 </div>
 </header >

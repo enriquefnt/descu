@@ -1,5 +1,3 @@
-
-
 <?php
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
@@ -16,8 +14,8 @@ $record = [
 				'Apellido' => ucwords(strtolower($_POST['Apellido'])),
 				'Nacimiento' =>$_POST['Nacimiento'],
 				'Sexo' =>$_POST['Sexo'],
-				'AOP' =>$_POST['AOP'],
-				'SEC' =>$_POST['SEC']];
+				'AOP' =>$_POST['AOP']];
+
 
 
 insert ($pdo, 'persona', $record);
@@ -33,11 +31,6 @@ header('Location: /../descu/includes/secargoDat.php')	;
    
 
 $result = findAll($pdo, 'aopzonas' ,'areaoperativa');
-
-$sql='call aop_sectores;';
-
-$aopsectores = $pdo->query($sql);
-
  $title = 'Carga Datos';
  
 
