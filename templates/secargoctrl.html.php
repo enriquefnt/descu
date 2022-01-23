@@ -26,4 +26,5 @@ foreach ($casosCtrl as $casoCtrl) {
 <?= htmlspecialchars($casoCtrl['areaoperativa'], ENT_QUOTES, 'UTF-8'); ?> </b>
  se cargó correctamente</p>
  <p> Se encuentra con su peso en <b> <?=($casoCtrl['ClaPe']);?></b> y su talla en <b> <?=($casoCtrl['ClaTa']);?></b>
+    <p> La evolución de su peso para su talla y edad con respecto al anterior se encuentra  <b> <?=($casoCtrl['evolucion']);?></b>
  </p>
