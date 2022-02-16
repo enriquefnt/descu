@@ -4,35 +4,6 @@ include __DIR__ . '/../includes/funciones.php';
 
 try {
 	if (isset($_POST['Nombre'])) {
-/*
-$record = [		'idPersona' => $_POST['idP'],
-	 			'Nombre' => ucwords(strtolower($_POST['Nombre'])),
-				'Apellido' => ucwords(strtolower($_POST['Apellido'])),
-				'Nacimiento' =>$_POST['Nacimiento'],
-				'Sexo' =>$_POST['Sexo'],
-				'AOP' =>$_POST['AOP']];
-
-	
-
-
-	
-
-	update($pdo, 'persona', 'idPersona',$record);
-
-
-
-
-
-
-		save($pdo, 'persona', 'idPersona', [`id` => $_POST['idP'],
-						  `Nombre` => $_POST['Nombre'],
-						  `Apellido` => $_POST['Apellido'],
-						  `Nacimiento` => $_POST['Nacimiento'],
-						  `Sexo` => $_POST['Sexo'],
-						  `AOP` => $_POST['AOP']]);
-						
-	*/	
-		
 
 
 		$id = $_POST['id'];
@@ -41,19 +12,17 @@ $record = [		'idPersona' => $_POST['idP'],
   		$Nacimiento = $_POST['Nacimiento'];
   		$Sexo = $_POST['Sexo'];
 		$AOP = $_POST['AOP'];
+		$SEC = $_POST['SEC'];
   		$sql = "UPDATE `persona` SET 
 			  		`Nombre`= '$Nombre',
 			  		`Apellido`= '$Apellido',
 			  		`Nacimiento`='$Nacimiento',
 			  		`Sexo`= '$Sexo',
-			  		`AOP`= '$AOP'
+			  		`AOP`= '$AOP' ,
+			  		`SEC`= '$SEC'
 				where `idPersona`=$id";
   		$pdo->exec($sql); 	
-  	//	$pdo->close();
-
-
-
-  	//header('Location: /../descu/includes/secargoDat.php')	;
+  	
   header("location: verlista.php");
   				
 
@@ -69,8 +38,6 @@ $record = [		'idPersona' => $_POST['idP'],
 
 		$result = findAll($pdo, 'aopzonas','areaoperativa');
 
-		//$sql='call saltaped_relbas.persona_id('.$_GET['id'].')';
-		//$fila = $pdo->query($sql);
 
 		$query = $pdo->prepare('call saltaped_relbas.persona_id('.$_GET['id'].')');
     	$query->execute();

@@ -32,16 +32,47 @@ session_start();
 
  <label for="AOP">Area Operativa:</label><br>
   <select name="AOP" required="required" id="AOP">
-  <option  type="number" value="<?=$datosCaso['AOP'] ?? ''?>"><?=$fila['areaoperativa'] ?? ''?></option>
+  <option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>"><?=$_SESSION['AreaOperativa'] ?? ''?></option>
+
 <?php
 $aop = [];
   foreach ($result as $aop) {
  echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
   }
 ?>
-</select><br><br> 
-  <input type="submit"  name="submit"  class="w3-button w3-black" value="Guardar Cambios">
-</form>
-</fieldset>
-</div>
+</select><br><br>
+<label for="Sector">Sector:</label><br>
+      <div id="selectsector"></div>
+
+<br>
+ <input type="submit"  class="w3-button w3-black" value="Cargar">
+
+
+<div>
+    <fieldset >
+</body>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#AOP').val(1);
+    recargarLista();
+
+    $('#AOP').change(function(){
+      recargarLista();
+    });
+  })
+</script>
+<script type="text/javascript">
+  function recargarLista(){
+    $.ajax({
+      type:"POST",
+      url:"sectores.php",
+      data:"areaoperativa=" + $('#AOP').val(),
+      success:function(r){
+        $('#selectsector').html(r);
+      }
+    });
+  }
+</script>
+</html>
 
