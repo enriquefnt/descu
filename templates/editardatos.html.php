@@ -20,7 +20,7 @@ session_start();
 
   <label for="Sexo">Sexo:</label><br>
   <select name="Sexo" id="Sexo" value="<?=$datosCaso['Sexo'] ?? ''?>">
-    <option value='<?=$datosCaso['Sexo'] ?? ''?>'><?=$fila['Sex'] ?? ''?></option>
+    <option selected value='<?=$datosCaso['Sexo'] ?? ''?>'><?=$fila['Sex'] ?? ''?></option>
     <option value='1'>Masculino</option>
     <option value='2'>Femenino</option>
     <option value='3'>No determinado</option>
@@ -31,20 +31,28 @@ session_start();
   <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" value="<?=$datosCaso['Nacimiento'] ?? ''?>"><br><br>
 
  <label for="AOP">Area Operativa:</label><br>
-  <select name="AOP" required="required" id="AOP">
-  <option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>"><?=$_SESSION['AreaOperativa'] ?? ''?></option>
+  <select name="AOP" id="AOP" >
+  
+  
 
-<?php
-$aop = [];
-  foreach ($result as $aop) {
- echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
+<?php 
+echo '<option selected="selected" value=' .  $datosCaso['AOP'].'>' . $fila['areaoperativa'] .'</option>';
+$aope = [];
+  foreach ($result as $aope) {
+ echo '<option value=' .  $aope['idaop'].'>' . $aope['areaoperativa'] .'</option>';
+
   }
+
+
 ?>
+
+
 </select><br><br>
 <label for="Sector">Sector:</label><br>
       <div id="selectsector"></div>
 
 <br>
+<option  type="number" value="<?=$datosCaso['idSector'] ?? ''?>"><?=$datosCaso['Sector'] ?? ''?></option>
  <input type="submit"  class="w3-button w3-black" value="Cargar">
 
 
