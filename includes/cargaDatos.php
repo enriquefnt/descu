@@ -14,8 +14,8 @@ $record = [
 				'Apellido' => ucwords(strtolower($_POST['Apellido'])),
 				'Nacimiento' =>$_POST['Nacimiento'],
 				'Sexo' =>$_POST['Sexo'],
-				'AOP' =>$_POST['AOP'],
-				'SEC' =>$_POST['SEC']];
+				'AOP' =>$_POST['AOP']];
+
 
 
 insert ($pdo, 'persona', $record);

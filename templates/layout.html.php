@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html style=" height:100%;">
 <head>
@@ -8,10 +12,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
  <script src="https://kit.fontawesome.com/07598e026b.js" crossorigin="anonymous"></script>
  <!--<link rel="stylesheet" type="text/css" href="../estilos/lay_style.css"> -->
- <script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"></script>
  <link rel="shortcut icon" href="../public/ico_descu.png">
 	<title><?=$title?></title>
 </head>
@@ -21,53 +21,53 @@
 <header class="w3-row-padding header w3-blue-grey">
 <h1>Registro de Controles Antropométricos</h1>
 <h3>Sectores descubiertos</h3>
-	<p>
-		<?php if ($_SESSION['tipo'] == 0){ 
-		echo  'Usuario:' ;
-		} else { echo '
-		Administrador:' ;} ?>
-		<b><?php 
-		if(isset($_SESSION['nombre'])) {
-			echo $_SESSION['nombre'];
-		}
-		?></b>
-		
-		<b><?php 
-		if(isset($_SESSION['nombre']) && $_SESSION['tipo'] == 0) {
-			echo "&nbsp&nbsp	&nbsp	Area Operativa: ";
-			echo $_SESSION['AreaOperativa'];
-		}
-		?></b>
+<p>
+	<?php if ($_SESSION['tipo'] == 0){ 
+	echo  'Usuario:' ;
+	} else { echo '
+	Administrador:' ;} ?>
+	<b><?php 
+	if(isset($_SESSION['nombre'])) {
+		echo $_SESSION['nombre'];
+	}
+	?></b>
+	
+	<b><?php 
+	if(isset($_SESSION['nombre']) && $_SESSION['tipo'] == 0) {
+		echo "&nbsp&nbsp	&nbsp	Area Operativa: ";
+		echo $_SESSION['AreaOperativa'];
+	}
+	?></b>
 
-	</p>
+</p>
 
 
 
 <div>
-	<div class="w3-bar w3-border w3-light-grey">
+<div class="w3-bar w3-border w3-light-grey">
 
 
-	  	<a href="../includes/inicio.php" class="w3-bar-item w3-button">Inicio</a>
-			<a href="../includes/buscacaso.php"class="w3-bar-item w3-button">Carga Datos</a>&nbsp &nbsp
-			<a href="../includes/cargaControl.php"class="w3-bar-item w3-button">Carga Controles</a>&nbsp &nbsp
+  		<a href="../includes/inicio.php" class="w3-bar-item w3-button">Inicio</a>
+		<a href="../includes/buscacaso.php"class="w3-bar-item w3-button">Carga Datos</a>&nbsp &nbsp
+		<a href="../includes/cargaControl.php"class="w3-bar-item w3-button">Carga Controles</a>&nbsp &nbsp
 
 
 
-			<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>&nbsp &nbsp
-			<a href="../includes/verF2.php"class="w3-bar-item w3-button ">Ver F2</a></li>&nbsp &nbsp
+		<a href="../includes/verlista.php"class="w3-bar-item w3-button ">Listados</a></li>&nbsp &nbsp
+		<a href="../includes/verF2.php"class="w3-bar-item w3-button ">Ver F2</a></li>&nbsp &nbsp
 
-			
-
-	<?php 
-		if(isset($_SESSION['nombre']) && ($_SESSION['tipo']==1)) { ;?>
-		<a href="../includes/registroUsuarios.php"class="w3-bar-item w3-button ">Registar Usuario</a></li>
-		<?php } ?>
 		
-			<a href="../includes/cargaSectores.php"class="w3-bar-item w3-button ">Cargar Sector</a></li>&nbsp &nbsp
-			<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
-		
-	</div>
-	</div>
+
+<?php 
+	if(isset($_SESSION['nombre']) && ($_SESSION['tipo']==1)) { ;?>
+	<a href="../includes/registroUsuarios.php"class="w3-bar-item w3-button ">Registar Usuario</a></li>
+	<?php } ?>
+	
+<a href="../includes/cargaSectores.php"class="w3-bar-item w3-button ">Cargar Sector</a></li>&nbsp &nbsp
+	<a href="../includes/logout.php"class="w3-bar-item w3-button ">Salir</a></li>
+	
+</div>
+</div>
 </header >
 
 
@@ -88,28 +88,4 @@
 </div>
 </footer>
 </body>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $('#AOP').val(1);
-    recargarLista();
-
-    $('#AOP').change(function(){
-      recargarLista();
-    });
-  })
-</script>
-<script type="text/javascript">
-  function recargarLista(){
-    $.ajax({
-      type:"POST",
-    //  url:"sectores.php",
-      url:" /../descu/includes/sectores.php"
-
-      data:"areaoperativa=" + $('#AOP').val(),
-      success:function(r){
-        $('#selectsector').html(r);
-      }
-    });
-  }
-</script>
 </html>

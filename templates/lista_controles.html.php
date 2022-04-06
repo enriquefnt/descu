@@ -25,6 +25,10 @@ session_start();
 
 	
 
+
+
+
+
 <?php 
 	foreach ($controles as $control):
 ?>

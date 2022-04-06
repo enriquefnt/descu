@@ -106,19 +106,6 @@ order by `' . $ord. '` ');
 	return $result->fetchAll();
 }
 
-function findAllId($pdo, $table, $primaryKey, $value) {
-	$query = 'SELECT * FROM `' . $table . '` WHERE `' . $primaryKey . '` = :value';
-
-	$parameters = [
-		'value' => $value
-	];
-
-	$query = query($pdo, $query, $parameters);
-
-	return $query->fetchAll();
-
-}
-
 function processDates($fields) {
 	foreach ($fields as $key => $value) {
 		if ($value instanceof DateTime) {
