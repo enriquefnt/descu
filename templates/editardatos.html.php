@@ -36,7 +36,7 @@ session_start();
   
 
 <?php 
-echo '<option selected="selected" value=' .  $datosCaso['AOP'].'>' . $fila['areaoperativa'] .'</option>';
+echo '<option selected="selected" value=' .  $datosCaso['AOP']. selected .'>' . $fila['areaoperativa'] .'</option>';
 $aope = [];
   foreach ($result as $aope) {
  echo '<option value=' .  $aope['idaop'].'>' . $aope['areaoperativa'] .'</option>';
