@@ -15,7 +15,7 @@ if ($_SESSION['tipo']== 1){
 
   <label for="AOP">Seleccione el área operativa:</label>
  
-   <select name="AOP" required="required" id="AOP">
+   <select name="AOP" required="required" id="AOPe">
 <option value=0>Seleccione AOP</option>
 <?php
 $aop = [];

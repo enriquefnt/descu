@@ -44,7 +44,7 @@ $aope = [];
   }
 
 
-?>
+?> 
 
 
 </select><br><br>
@@ -52,7 +52,10 @@ $aope = [];
       <div id="selectsector"></div>
 
 <br>
-<option  type="number" value="<?=$datosCaso['idSector'] ?? ''?>"><?=$datosCaso['Sector'] ?? ''?></option>
+
+
+
+
  <input type="submit"  class="w3-button w3-black" value="Cargar">
 
 

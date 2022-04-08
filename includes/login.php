@@ -69,10 +69,11 @@ session_start();
 <head>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="../estilos/estilo_login.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	
+	<link rel="shortcut icon" href="../public/ico_descu.png">
 </head>
 <header class="login-header">
-Ingreso a listados
+Ingreso al Sistema
 </header>
 
 <body>
