@@ -31,7 +31,7 @@ session_start();
   <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" value="<?=$datosCaso['Nacimiento'] ?? ''?>"><br><br>
 
  <label for="AOP">Area Operativa:</label><br>
-  <select name="AOP" id="AOP" >
+  <select name="AOP" id="AOPe" >
   
   
 
@@ -65,10 +65,10 @@ $aope = [];
 
 <script type="text/javascript">
   $(document).ready(function(){
-    $('#AOP').val(1);
+    $('#AOPe').val();
     recargarLista();
 
-    $('#AOP').change(function(){
+    $('#AOPe').change(function(){
       recargarLista();
     });
   })
@@ -78,7 +78,7 @@ $aope = [];
     $.ajax({
       type:"POST",
       url:"sectores.php",
-      data:"areaoperativa=" + $('#AOP').val(),
+      data:"areaoperativa=" + $('#AOPe').val(),
       success:function(r){
         $('#selectsector').html(r);
       }
