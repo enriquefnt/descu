@@ -44,7 +44,7 @@ try {
     	$fila = $query->fetch();	
 
 
-
+    	$GLOBALS['idP'] = $_GET['id'] ;
 
 
 
@@ -60,9 +60,9 @@ try {
 	}
 }
 catch (PDOException $e) {
-	$title = 'An error has occurred';
+	$title = 'Se produjo un error';
 
-	$output = 'Database error: ' . $e->getMessage() . ' in ' .
+	$output = 'Error en los datos: ' . $e->getMessage() . ' en ' .
 	$e->getFile() . ':' . $e->getLine();
 }
 

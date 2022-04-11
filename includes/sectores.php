@@ -2,9 +2,19 @@
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
  
-$areaOP= $_POST['areaoperativa'] ;
-$sectores=findAllId($pdo, 'sectores' , 'idaop' , $areaOP );
-$cadena="<select id='lista2' name='SEC'>";
+
+//$datoPersona = $pdo->query('SELECT * FROM persona inner join sectores on SEC=idSector where idPersona=$_GET['id']');
+
+
+
+$cadena="<select id='lista2' name='SEC'><option value=0>Indique sector</option>";
+
+$sectores=findAllId($pdo, 'sectores' , 'idaop' , $_POST['AOP'] );
+
+
+
+
+
 if (count($sectores)>0){
 foreach($sectores as $sec) 
 
@@ -17,6 +27,7 @@ foreach($sectores as $sec)
 
 
 }
+
 else {
     echo "Sin Datos";
 }

@@ -7,7 +7,7 @@ session_start();
       <legend>Datos personales</legend>
 <form class="w3-group w3-light-grey" action="" method="post" >
   
-  <input type="hidden" name="id" value="<?=$datosCaso['idPersona'] ?? ''?>">  
+  <input type="hidden" name="id"  value="<?=$datosCaso['idPersona'] ?? ''?>">  
 
   
 
@@ -78,8 +78,8 @@ $aope = [];
     $.ajax({
       type:"POST",
       url:"sectores.php",
-      data:"areaoperativa=" + $('#AOPe').val(),
-      success:function(r){
+      data:"AOP=" + $('#AOPe').val(),
+         success:function(r){
         $('#selectsector').html(r);
       }
     });
