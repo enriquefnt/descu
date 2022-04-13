@@ -1,15 +1,18 @@
 <?php
 include __DIR__ . '/conect.php';
 include __DIR__ . '/funciones.php';
- 
-
-//$datoPersona = $pdo->query('SELECT * FROM persona inner join sectores on SEC=idSector where idPersona=$_GET['id']');
 
 
+
+
+
+//echo '$GLOBALS['idP']' . 'nada';
+//echo $_POST['AOP'] . '<br>' ;
+$AOPER=$_POST['AOP'] ;
 
 $cadena="<select id='lista2' name='SEC'><option value=0>Indique sector</option>";
 
-$sectores=findAllId($pdo, 'sectores' , 'idaop' , $_POST['AOP'] );
+$sectores=findAllId($pdo, 'sectores' , 'idaop' , $AOPER );
 
 
 

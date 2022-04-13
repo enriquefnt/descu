@@ -61,7 +61,7 @@ $aop = [];
 		$.ajax({
 			type:"POST",
 			url:"sectores.php",
-			data:"areaoperativa=" + $('#AOP').val(),
+			data:"AOP=" + $('#AOP').val(),
 			success:function(r){
 				$('#selectsector').html(r);
 			}
