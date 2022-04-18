@@ -19,7 +19,7 @@ $record = [
 
 
 insert ($pdo, 'persona', $record);
-session_unset();
+//session_unset();
 
 header('Location: /../descu/includes/secargoDat.php')	;	 
 

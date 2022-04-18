@@ -24,11 +24,12 @@ session_start();
   <input type="date" id="Nacimiento" name="Nacimiento" min="2015-01-01" max="<?=date('Y-m-d');?>" value=""><br><br>
 
 <label for="AOP">Area Operativa:</label><br>
-<select name="AOP" required="required" id="AOP" value="Area Operativa">>
-
-<option  type="number" value="<?=$_SESSION['AOP'] ?? ''?>"><?=$_SESSION['AreaOperativa'] ?? ''?></option>
+<select name="AOP" required="required" id="AOPe" value="Area Operativa">>
 
 <?php
+
+echo '<option selected="selected" value=' .  $_SESSION['AOP']. selected .'>' . $_SESSION['AreaOperativa'] .'</option>';
+
 $aop = [];
   foreach ($result as $aop) {
  echo '<option value=' .  $aop['idaop'].'>' . $aop['areaoperativa'] .'</option>';
@@ -48,7 +49,7 @@ $aop = [];
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#AOP').val(1);
+		$('#AOP').val();
 		recargarLista();
 
 		$('#AOP').change(function(){
@@ -61,7 +62,7 @@ $aop = [];
 		$.ajax({
 			type:"POST",
 			url:"sectores.php",
-			data:"AOP=" + $('#AOP').val(),
+			data:"AOP=" + $('#AOPe').val(),
 			success:function(r){
 				$('#selectsector').html(r);
 			}
