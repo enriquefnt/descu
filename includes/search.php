@@ -8,8 +8,7 @@ $data = [];
 if($_SESSION['tipo']== 0){
 
 
-
-  //  $stmt = $pdo->prepare("SELECT CONCAT(Nombre,' ',Apellido) as nomApe, idPersona FROM persona WHERE CONCAT(Nombre,' ',Apellido) LIKE ? ");
+  
   $stmt = $pdo->prepare("SELECT CONCAT(Nombre,' ',Apellido) as nomApe, idPersona, AOP FROM persona 
 inner join aopzonas on AOP=idaop
 WHERE AOP = $areaoperativa  AND CONCAT(Nombre,' ',Apellido) LIKE ? " );

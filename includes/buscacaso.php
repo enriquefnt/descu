@@ -5,9 +5,9 @@ try {
 
 
 
-$sql='call lista_simple;';
+// $sql='call lista_simple;';
 
-$casos = $pdo->query($sql);
+// $casos = $pdo->query($sql);
  $title = 'Buscar caso';
 ob_start();
 include __DIR__ . '/../templates/buscacaso.html.php';
