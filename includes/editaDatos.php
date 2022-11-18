@@ -7,7 +7,6 @@ try {
 
 		
 
-
 		$id = $_POST['id'];
   		$Nombre = ucwords(strtolower($_POST['Nombre'])); 
   		$Apellido = ucwords(strtolower($_POST['Apellido']));
@@ -22,11 +21,9 @@ try {
 			  		`AOP`= '$AOP'
 				where `idPersona`=$id";
   		$pdo->exec($sql); 	
-  	//	$pdo->close();
+  
 
-
-
-  	//header('Location: /../descu/includes/secargoDat.php')	;
+  
   header("location: verlista.php");
   				
 
