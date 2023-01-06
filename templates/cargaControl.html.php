@@ -1,5 +1,4 @@
-<!-- <link rel="stylesheet" type="text/css" href="../estilos/estilo.css"> -->
-  
+
 <?php 
 session_start();
 ?>
@@ -47,7 +46,7 @@ session_start();
         target: "dName",
         data: "search.php",
         
-        // OPTIONAL
+        
         delay : 250,
         min : 3
       });
