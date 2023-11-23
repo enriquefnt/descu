@@ -19,7 +19,7 @@ if (isset($_POST['nombre'])) {
 $registro = [
       	 			'nombre' => ucwords(strtolower($_POST['nombre'])),
       				'apellido' => ucwords(strtolower($_POST['apellido'])),
-              'profesion' => $_POST['profesion'],
+                              'profesion' => $_POST['profesion'],
       				'AOP' => $_POST['AOP'],
       				'email' => strtolower($_POST['email']),
       				'usuario' => $_POST['usuario'],
