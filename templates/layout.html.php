@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html style=" height:100%;">
 <head>
