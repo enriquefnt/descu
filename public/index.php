@@ -48,7 +48,7 @@ session_start();
 						$_SESSION['idUser'] = $data['id'];
 
 
-						print_r($_SESSION);
+					//	print_r($_SESSION);
 						header('Location: /descu/includes/inicio.php');
 						
 
