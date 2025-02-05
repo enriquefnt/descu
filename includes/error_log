@@ -1169,3 +1169,97 @@ Stack trace:
 #0 /home/saltaped/public_html/descu/includes/secargoCtrl.php(7): PDO->query()
 #1 {main}
   thrown in /home/saltaped/public_html/descu/includes/secargoCtrl.php on line 7
+[18-Jan-2025 08:25:39 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 08:25:39 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 08:25:39 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 08:25:39 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[18-Jan-2025 10:12:44 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 10:12:44 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:12:44 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:12:44 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[18-Jan-2025 10:12:55 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/saltaped/public_html/descu/includes/logout.php on line 3
+[18-Jan-2025 10:13:10 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/saltaped/public_html/descu/includes/logout.php on line 3
+[18-Jan-2025 10:13:21 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 10:13:21 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[18-Jan-2025 10:13:32 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 10:14:46 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:15:28 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/saltaped/public_html/descu/includes/logout.php on line 3
+[18-Jan-2025 10:15:56 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 10:15:56 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:15:56 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:15:56 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[18-Jan-2025 10:16:12 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 10:16:12 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[18-Jan-2025 10:16:24 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[18-Jan-2025 10:16:24 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:16:24 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[18-Jan-2025 10:16:24 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[18-Jan-2025 13:38:38 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/saltaped/public_html/descu/includes/logout.php on line 3
+[19-Jan-2025 10:28:25 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[19-Jan-2025 10:28:25 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[19-Jan-2025 10:28:25 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[19-Jan-2025 10:28:25 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[20-Jan-2025 03:27:59 UTC] PHP Warning:  Undefined array key "id" in /home/saltaped/public_html/descu/includes/editaDatos.php on line 75
+[20-Jan-2025 03:27:59 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[20-Jan-2025 03:27:59 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[20-Jan-2025 12:42:20 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[20-Jan-2025 12:42:20 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[20-Jan-2025 12:42:20 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[20-Jan-2025 12:42:20 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[20-Jan-2025 12:42:32 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[20-Jan-2025 12:42:32 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[20-Jan-2025 12:42:32 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[20-Jan-2025 12:42:32 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[20-Jan-2025 12:43:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[20000]: <<Unknown error>>: 1339 Case not found for CASE statement in /home/saltaped/public_html/descu/includes/secargoCtrl.php:7
+Stack trace:
+#0 /home/saltaped/public_html/descu/includes/secargoCtrl.php(7): PDO->query()
+#1 {main}
+  thrown in /home/saltaped/public_html/descu/includes/secargoCtrl.php on line 7
+[20-Jan-2025 12:43:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[20000]: <<Unknown error>>: 1339 Case not found for CASE statement in /home/saltaped/public_html/descu/includes/secargoCtrl.php:7
+Stack trace:
+#0 /home/saltaped/public_html/descu/includes/secargoCtrl.php(7): PDO->query()
+#1 {main}
+  thrown in /home/saltaped/public_html/descu/includes/secargoCtrl.php on line 7
+[20-Jan-2025 14:48:09 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/includes/cargaSectores.php on line 9
+[20-Jan-2025 14:48:09 UTC] PHP Warning:  Undefined variable $result in /home/saltaped/public_html/descu/templates/cargaSectores.html.php on line 19
+[20-Jan-2025 14:48:09 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/saltaped/public_html/descu/templates/cargaSectores.html.php on line 19
+[20-Jan-2025 14:48:09 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[20-Jan-2025 14:48:09 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[26-Jan-2025 03:50:06 UTC] PHP Warning:  Undefined variable $controles in /home/saltaped/public_html/descu/templates/lista_controles.html.php on line 33
+[26-Jan-2025 03:50:06 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/saltaped/public_html/descu/templates/lista_controles.html.php on line 33
+[26-Jan-2025 03:50:06 UTC] PHP Warning:  Undefined variable $control in /home/saltaped/public_html/descu/templates/lista_controles.html.php on line 54
+[26-Jan-2025 03:50:06 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/lista_controles.html.php on line 54
+[26-Jan-2025 03:50:06 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[28-Jan-2025 20:13:00 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[31-Jan-2025 14:55:08 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[31-Jan-2025 20:51:37 UTC] PHP Warning:  Undefined array key "idUser" in /home/saltaped/public_html/descu/templates/cargaControl.html.php on line 29
+[31-Jan-2025 20:51:37 UTC] PHP Warning:  Undefined array key "tipo" in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[01-Feb-2025 12:28:02 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/saltaped/public_html/descu/includes/logout.php on line 3
+[05-Feb-2025 10:32:51 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 10:32:51 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:32:51 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:32:51 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[05-Feb-2025 10:33:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[20000]: <<Unknown error>>: 1339 Case not found for CASE statement in /home/saltaped/public_html/descu/includes/secargoCtrl.php:7
+Stack trace:
+#0 /home/saltaped/public_html/descu/includes/secargoCtrl.php(7): PDO->query()
+#1 {main}
+  thrown in /home/saltaped/public_html/descu/includes/secargoCtrl.php on line 7
+[05-Feb-2025 10:36:05 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 10:36:05 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[05-Feb-2025 10:36:11 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 10:45:49 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 10:45:49 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:45:49 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:45:49 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[05-Feb-2025 10:47:43 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 10:47:43 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:47:43 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:47:43 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[05-Feb-2025 10:59:19 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 10:59:19 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:59:19 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 10:59:19 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
+[05-Feb-2025 11:03:18 UTC] PHP Warning:  Undefined variable $title in /home/saltaped/public_html/descu/templates/layout.html.php on line 16
+[05-Feb-2025 11:03:18 UTC] PHP Warning:  Undefined global variable $_SESSION in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 11:03:18 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/saltaped/public_html/descu/templates/layout.html.php on line 25
+[05-Feb-2025 11:03:18 UTC] PHP Warning:  Undefined variable $output in /home/saltaped/public_html/descu/templates/layout.html.php on line 79
